@@ -1,0 +1,8 @@
+<li ng-init="count=0">
+  <div ng-style="{'background-color': color}" class="skillbox" >
+    <div class="center-wrap-sm">
+      <h2 class="skillname">{{ skillname }}</h2>
+      <h2 class="skillarray">{{ technologies[count % technologies.length].name }}</h2>
+    </div>
+  </div>
+</li>

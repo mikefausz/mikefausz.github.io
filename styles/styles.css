@@ -1,155 +1,379 @@
 @font-face {
-  font-family: Norwester;
-  src: local("Norwester"); }
-
-@font-face {
   font-family: Sedgwick Co;
   src: local("Sedgwick Co"); }
 
-html, body {
-  height: 100vh;
-  text-align: center;
-  font-family: 'Georgia'; }
+@font-face {
+  font-family: Norwester;
+  src: local("Norwester"); }
 
-.content {
-  width: 100%;
-  background: white; }
+.container {
+  width: 1020px;
+  margin: 0 auto; }
 
-.block {
-  height: 100vh;
-  padding: 40px 20%; }
+.buffer {
+  padding-top: 720px; }
 
 h1 {
-  text-align: center;
-  font-family: 'Norwester';
-  font-size: 176px;
-  margin-left: -12px; }
+  font-family: 'Montserrat'; }
 
-h2 {
-  font-size: 40px;
-  margin: 16px 0;
-  font-family: 'Sedgwick Co';
-  text-align: left; }
+h4 {
+  font-style: italic;
+  font-size: 28px;
+  color: grey; }
 
-h3 {
-  font-size: 3rem;
-  font-family: 'Norwester';
-  text-transform: uppercase;
-  margin: 24px; }
-
-.logo, .logo-sm {
-  width: 180px;
-  height: 180px;
-  border-radius: 100%;
-  margin: 0 auto;
-  padding-top: 32px;
-  background-color: #AF9D6E; }
-  .logo h3, .logo-sm h3 {
-    color: black;
-    font-size: 72px;
-    letter-spacing: -17px;
-    margin-left: 2px;
-    font-family: 'Sedgwick Co'; }
-
-.logo-sm {
-  width: 60px;
-  height: 60px;
-  padding-top: 0px; }
-  .logo-sm h3 {
+.project-listing {
+  margin: 10px 0;
+  transition: all .5s ease-in-out; }
+  .project-listing:hover h2 {
+    text-shadow: 0px 0px 6px #848484; }
+  .project-listing:hover .tint {
+    background-color: transparent !important; }
+  .project-listing .tint {
+    transition: all .5s ease-in-out; }
+  .project-listing h2 {
     color: white;
-    font-size: 24px;
-    letter-spacing: -4px;
-    margin: 20px 0 0 -4px; }
+    transition: all .5s ease-in-out; }
 
-.bar, .bar-bottom {
-  width: 98%;
-  height: 6px;
-  background-color: #AF9D6E; }
+.listing-detail {
+  margin-top: 90px; }
 
-.bar-bottom {
-  margin-bottom: 36px; }
-
-#splash {
-  background: url("https://images.unsplash.com/photo-1439003511744-2a0490ea0a88?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1275");
-  background-size: 100%;
-  background-size: 106%;
-  background-position-x: 98%;
+.project-detail {
+  height: 250px;
   width: 100%;
-  z-index: -1;
-  position: fixed;
-  padding: 0% 20%;
+  overflow: hidden; }
+
+.center-wrap, .center-wrap-sm {
+  position: absolute;
+  width: 1020px;
+  height: 250px;
   display: flex;
+  text-align: center;
   justify-content: center;
-  flex-direction: column; }
-  #splash h2 {
-    color: white; }
+  flex-direction: column;
+  text-align: center;
+  color: white; }
 
-#buffer {
-  background: none; }
+.center-wrap-sm {
+  width: 500px;
+  height: 300px; }
 
-#about {
-  text-align: left; }
-  #about .flex {
-    width: 98%;
-    display: flex;
-    justify-content: space-between; }
-  #about p {
-    display: inline-block;
-    width: 43%;
-    font-size: 18px;
-    text-align: left;
-    margin-right: 12px;
-    text-align: justify; }
-    #about p span {
-      float: left;
-      font-size: 48px;
-      margin: -8px 8px -10px 0px;
-      font-family: 'Norwester'; }
+.box, .skillbox {
+  width: 500px;
+  height: 300px;
+  display: inline-block; }
 
-img {
-  width: 100%; }
+.box-full {
+  width: 100%;
+  border: 6px solid #F44336; }
 
-.img-prof {
-  display: inline-block;
-  width: 50%;
-  vertical-align: top; }
+.rhymebox {
+  background-color: rebeccapurple; }
+  .rhymebox:hover {
+    cursor: pointer; }
 
-#skills {
-  background-color: #AF9D6E;
-  color: black; }
-  #skills .bar, #skills .bar-bottom {
-    background: white; }
+.skills-gif, .skills-js, .skills-web, .skills-dev {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-image: url("http://www.codeforest.net/wp-content/uploads/2013/05/backbone.png");
+  background-size: 100%; }
+
+.project-summary {
+  text-align: center;
+  margin: 50px 0; }
+
+.project-main-image {
+  width: 100%;
+  height: 400px; }
+
+.project-description {
+  text-align: center;
+  margin: 50px 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+a {
+  text-decoration: none; }
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8); }
+  nav a {
+    color: #F44336; }
+
+.nav-wrap {
+  width: 1022px;
+  margin: 0 auto;
+  padding: 10px 0 20px 0; }
+
+.nav-logo {
+  padding-top: 10px; }
+
+.nav-links-wrap {
+  font-family: "Montserrat";
+  text-align: right;
+  padding-top: 10px;
+  width: 50%; }
+  .nav-links-wrap li {
+    padding-top: 16px;
+    height: 20px; }
+    .nav-links-wrap li:hover {
+      border-bottom: 2px solid #F44336; }
+
+section {
+  background-color: white; }
 
 ul {
   list-style-type: none;
-  padding: 0; }
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 li {
+  display: inline-block; }
+
+.tint {
+  height: 100%;
+  width: 100%; }
+
+.logo {
+  width: 180px;
+  height: 150px;
+  border-radius: 100%;
+  position: absolute;
+  top: 34%;
+  left: 130px;
+  padding-top: 32px;
+  background-color: #F44336; }
+  .logo h3 {
+    color: black;
+    font-size: 72px;
+    letter-spacing: -17px;
+    margin: 34px 16px;
+    font-family: 'Sedgwick Co'; }
+
+.logo-sm {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 100%;
+  background-color: #F44336; }
+  .logo-sm h3 {
+    color: white;
+    font-size: 20px;
+    letter-spacing: -4px;
+    margin: 0;
+    padding: 16px 4px;
+    font-family: 'Sedgwick Co'; }
+  .logo-sm:hover {
+    background-color: black;
+    border: none !important; }
+
+#splash {
+  background-image: url("https://images.unsplash.com/photo-1445865272827-4894eb9d48de?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=da65030b962690764048bd8948d46e41");
+  position: fixed;
+  width: 100%;
+  height: 720px;
+  z-index: -1; }
+  #splash .tint {
+    background-color: rgba(0, 0, 0, 0.85); }
+  #splash h1, #splash h2, #splash .bar {
+    position: absolute;
+    color: white;
+    font-family: "Merriweather";
+    font-weight: 900;
+    font-family: "Source Serif Pro";
+    font-weight: 700;
+    font-size: 88px;
+    left: 340px; }
+  #splash h1 {
+    top: 230px;
+    margin: 0; }
+  #splash .bar {
+    top: 326px; }
+  #splash h2 {
+    top: 340px; }
+
+h2 {
+  font-family: "Lato";
+  font-size: 48px;
+  color: #F44336;
+  margin: 0; }
+
+.bar {
+  height: 8px;
+  width: 80px;
+  margin: 10px 0;
+  background-color: #F44336; }
+
+#about .about-text {
   display: inline-block;
-  vertical-align: middle;
-  margin: 0 1%; }
+  width: 70%; }
+
+#about p {
+  font-family: "Lato";
+  line-height: 1.8; }
+
+#about img {
+  float: right;
+  display: inline-block; }
+
+.project-box {
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  position: relative;
+  transition: all .5s ease-in-out; }
+  .project-box:hover h2 {
+    text-shadow: 0px 0px 6px #848484;
+    transform: scale(1.1); }
+  .project-box .tint {
+    transition: all .5s ease-in-out; }
+  .project-box h2 {
+    color: white;
+    transition: all .5s ease-in-out; }
+
+#skills-img {
+  background-image: url("http://fillmurray.com/1200/400"); }
+  #skills-img .tint {
+    background-color: rgba(244, 67, 54, 0.5); }
+
+#about-face {
+  background-image: url("http://fillmurray.com/1200/400"); }
+  #about-face .tint {
+    background-color: rgba(244, 67, 54, 0.5); }
+
+#contact-img {
+  background-image: url("http://fillmurray.com/1200/400"); }
+  #contact-img .tint {
+    background-color: rgba(244, 67, 54, 0.5); }
+
+#chuckwagon {
+  background-image: url("../images/mapwide.png");
+  background-size: 300%;
+  background-position-x: 51%;
+  background-position-y: 47%; }
+  #chuckwagon .tint {
+    background-color: #259bcd;
+    background-color: rgba(37, 155, 205, 0.75); }
+  #chuckwagon h2 {
+    left: 100px;
+    font-family: "Bevan"; }
+  #chuckwagon:hover .tint {
+    background-color: rgba(37, 155, 205, 0); }
+
+#honebrew {
+  background-image: url("https://alopexadventures.com/wp-content/uploads/2015/06/Dollarphotoclub_56765387.jpg");
+  background-position-y: 23%;
+  background-size: 253%; }
+  #honebrew .tint {
+    background-color: rgba(255, 188, 7, 0.85); }
+  #honebrew h2 {
+    left: 120px;
+    top: 80px;
+    font-size: 48px;
+    font-family: "Bree Serif"; }
+  #honebrew:hover .tint {
+    background-color: rgba(255, 188, 7, 0); }
+
+#fetch {
+  background-image: url("https://images.unsplash.com/photo-1456143077270-30de0a1bf7bc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=14f25f544fa8452539c73d46e667a6db");
+  background-position-y: 28%;
+  background-position-x: 42%; }
+  #fetch .tint {
+    background-color: rgba(19, 67, 123, 0.85); }
+  #fetch h2 {
+    left: 190px;
+    top: 70px;
+    font-size: 56px;
+    font-family: "Lobster"; }
+  #fetch:hover .tint {
+    background-color: rgba(19, 67, 123, 0); }
+
+#be-mime {
+  background-image: url("http://gidbn.sites.caxton.co.za/wp-content/uploads/sites/96/2014/06/Sibo-Masondo-1.jpg");
+  background-position-y: 21%;
+  background-position-x: 50%; }
+  #be-mime .tint {
+    background-color: rgba(71, 1, 1, 0.85); }
+  #be-mime h2 {
+    left: 164px;
+    top: 86px;
+    font-size: 50px;
+    font-family: "Josefin Sans";
+    font-weight: 700; }
+  #be-mime:hover .tint {
+    background-color: rgba(37, 155, 205, 0); }
+
+#powell-peralta {
+  background-image: url("../images/bg copy.jpg");
+  background-image: url("../images/bg copy.jpg");
+  background-size: 147%; }
+  #powell-peralta .tint {
+    background-color: rgba(180, 41, 46, 0.85); }
+  #powell-peralta h2 {
+    left: 100px;
+    font-family: "Open Sans";
+    font-weight: 800; }
+  #powell-peralta:hover .tint {
+    background-color: rgba(37, 155, 205, 0); }
+
+#surf-paddle {
+  background-image: url("https://images.unsplash.com/photo-1456143077270-30de0a1bf7bc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=14f25f544fa8452539c73d46e667a6db");
+  background-image: url(https://wizardofspa.files.wordpress.com/2013/04/awesomely-ocean-waves.jpg);
+  background-position-y: 20%; }
+  #surf-paddle .tint {
+    background-color: rgba(20, 111, 179, 0.85); }
+  #surf-paddle h2 {
+    left: 78px;
+    top: 100px;
+    font-size: 38px;
+    font-weight: 400;
+    font-family: "Open Sans"; }
+  #surf-paddle:hover .tint {
+    background-color: rgba(37, 155, 205, 0); }
+
+.tech {
+  text-align: center; }
+  .tech ul {
+    display: block; }
+  .tech h3 {
+    font-family: "Montserrat";
+    text-transform: uppercase; }
+
+.skillname {
+  display: block; }
+
+.skillarray {
+  display: none; }
+
+.skillbox {
+  color: white !important;
+  margin: 10px 0; }
+  .skillbox:hover {
+    cursor: pointer; }
+    .skillbox:hover .skillname {
+      display: none; }
+    .skillbox:hover .skillarray {
+      display: block; }
 
 .icon-box {
-  width: 80px; }
+  width: 70px;
+  margin: 0 20px;
+  transition: all .5s ease-in-out; }
+  .icon-box:hover h4 {
+    color: black; }
   .icon-box img {
     width: 100%; }
-
-.carousel-inner div {
-  height: 400px; }
-
-#contact {
-  background: black;
-  color: white; }
-  #contact .logo, #contact .logo-sm {
-    margin-top: 36px; }
-
-.contact-line .glyphicon, .contact-line h4 {
-  display: inline-block;
-  font-size: 3rem;
-  vertical-align: middle; }
-
-.contact-line .glyphicon {
-  color: #AF9D6E; }
-
-.contact-line h4 {
-  font-family: 'Norwester'; }
+  .icon-box h4 {
+    margin: 0;
+    color: transparent;
+    transition: all .5s ease-in-out; }

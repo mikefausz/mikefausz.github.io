@@ -1,0 +1,70 @@
+<!-- <section>
+  <div class="tint">
+    <div class="logo"><h3>MF</h3></div>
+    <h1>Mike Fausz</h1>
+    <h2>Dev & Design</h2>
+  </div>
+</section> -->
+<div class="container buffer">
+<section id="about">
+  <a name="ABOUT"></a>
+  <div class="about-text">
+    <!-- <h2>This is the online portfolio of Mike Fausz, a real-live human being who develops software and designs clean user experiences.</h2> -->
+    <name-rhymer
+      mikes="mikes"
+      fauszs="fauszs">
+
+    </name-rhymer>
+  </div>
+  <img src="http://www.fillmurray.com/300/300" alt="" />
+
+</section>
+<section id="work">
+  <a name="WORK"></a>
+  <h2>Mike Fausz is a real-live human being who develops software and designs clean user experiences.</h2>
+  <ul>
+    <project-listing ng-repeat="project in projects"
+
+      name="{{ project.name }}"
+      displayname="{{ project.displayname }}"
+      number="{{ project.number }}"
+      color="{{ project.color }}"
+      font="{{ project.font }}"
+      fontsize="{{ project.fontsize }}"
+      url="{{ project.url}}"
+      cover="{{ project.cover }}"
+      description="{{ project.descShort }}"
+      tech="{{ project.tech }}"
+      images="{{ project.images }}">
+
+    </project-listing>
+    <div class="box-full">
+      <a href="/#/projects">
+        <h2>See what else he's done here</h2>
+      </a>
+    </div>
+</section>
+<section>
+  <h2>He can do many things. </h2>
+  <ul>
+    <skills-jumbler ng-repeat="skill in skills track by $index"
+      number="{{ skill.number }}"
+      skillname="{{ skill.skillname }}"
+      color="{{ skill.color }}"
+      technologies="skill.technologies"
+    >
+
+    </skills-jumbler>
+  </ul>
+  <div class="box-full">
+    <a href="/#/skills">
+      <h2>See what else he can do here</h2>
+    </a>
+  </div>
+
+
+</section>
+
+
+  </div>
+</section>

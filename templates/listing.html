@@ -1,0 +1,46 @@
+<div class="container listing-detail">
+  <div class="project-detail" ng-style="{'background-image': 'url({{ project.cover }})'}">
+    <div class="tint" ng-style="{'background-color': project.color}">
+      <div class="center-wrap">
+        <h1 ng-style="{'font': project.font}">{{ project.displayname }}</h1>
+      </div>
+    </div>
+</div>
+
+<h2 class="project-summary">{{ project.summary }}</h2>
+
+<a ng-href="{{ project.url }}"><div class="project-main-image" ng-style="{'background-image': 'url({{ project.images[0] }})'}"></div>
+</a>
+
+<h2 class="project-description">{{ project.description }}</h2>
+
+<div class="project-main-image" ng-style="{'background-image': 'url({{ project.images[0] }})'}"></div>
+
+<ul>
+  <li ng-repeat="tech in project.tech"> {{ tech }} </li>
+</ul>
+
+
+<ul class="project-nav">
+  <project-listing
+    name="{{ prevProject.name }}"
+    displayname="{{ prevProject.displayname }}"
+    number="{{ prevProject.number }}"
+    color="{{ prevProject.color }}"
+    font="{{ prevProject.font }}"
+    cover="{{ prevProject.cover }}"
+    desc="{{ prevProject.descShort }}"
+    tech="{{prevProject.tech}}">
+  </project-listing>
+  <project-listing
+    name="{{ nextProject.name }}"
+    displayname="{{ nextProject.displayname }}"
+    number="{{ nextProject.number }}"
+    color="{{ nextProject.color }}"
+    font="{{ nextProject.font }}"
+    cover="{{ nextProject.cover }}"
+    desc="{{ nextProject.descShort }}"
+    tech="{{ nextProject.tech }}">
+  </project-listing>
+</ul>
+</div>

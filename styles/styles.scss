@@ -1,258 +1,545 @@
-$gold: #AF9D6E;
-$red: #8C271E;
-$olive: #6A7557;
-$green: #29524A;
-$serif: 'Roboto Slab', serif;
-$sans: 'Roboto', sans-serif;
+$red: #F44336; // 	rgba(244, 67, 54, 1)
+// CHUCKWAGON VARIABLES
+$chuckwagon-blue: rgba(37,155,205, .75);
+$chuckwagon-font: "Bevan";
+$chuckwagon-bg: '../images/mapwide.png';
 
-@font-face {
-  font-family: Norwester;
-  src: local("Norwester"),
-}
+// Fetch! VARIABLES
+$fetch-blue: rgba(19, 67, 123, .85);
+// $fetch-blue: rgba(35, 99, 173, .85);
+$fetch-font: "Lobster";
+
+// be mime VARIABLES
+$be-mime-red: rgba(71, 1, 1, .85);
+// $be-mime-font: "Poiret One";
+$be-mime-font: "Josefin Sans";
+
+// HONEBREW VARIABLES
+$honebrew-yellow: rgba(255, 188, 7, .85);
+$honebrew-font: "Bree Serif";
+
+// POWELL-PERALTA
+$powell-peralta-red: rgba(180,41,46, .85);
+$powell-peralta-font: "Open Sans";
+
+// SURF & PADDLE CO.
+$surf-paddle-blue: rgba(20,111,179,.85);
+$surf-paddle-font: "Open Sans";
 
 @font-face {
   font-family: Sedgwick Co;
   src: local("Sedgwick Co"),
 }
 
-html, body {
-  height: 100vh;
-  text-align: center;
-  font-family: 'Georgia';
+@font-face {
+  font-family: Norwester;
+  src: local("Norwester"),
 }
 
-.content {
-  width: 100%;
-  background: white;
+.container {
+  width: 1020px;
+  margin: 0 auto;
 }
 
-.block {
-  height: 100vh;
-  padding: 40px 20%;
+.buffer {
+  padding-top: 720px;
 }
 
 h1 {
+  font-family: 'Montserrat'
+}
+
+h4 {
+  font-style: italic;
+  font-size: 28px;
+  color: grey;
+}
+
+.project-listing {
+  margin: 10px 0;
+  transition: all .5s ease-in-out;
+  &:hover {
+    h2 {
+      text-shadow: 0px 0px 6px rgba(132, 132, 132, 1);
+    }
+    .tint {
+      background-color: transparent !important;
+    }
+  }
+  .tint {
+    transition: all .5s ease-in-out;
+  }
+  h2 {
+    color: white;
+    transition: all .5s ease-in-out;
+  }
+}
+
+.listing-detail {
+  margin-top: 90px;
+}
+
+.project-detail {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.center-wrap {
+  position: absolute;
+  width: 1020px;
+  height: 250px;
+  display: flex;
   text-align: center;
-  font-family: 'Norwester';
-  font-size: 176px;
-  margin-left: -12px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
 }
 
-h2 {
-  font-size: 40px;
-  margin: 16px 0;
-  font-family: 'Sedgwick Co';
-  text-align: left;
+.center-wrap-sm {
+  @extend .center-wrap;
+  width: 500px;
+  height: 300px;
 }
 
-h3 {
-  font-size: 3rem;
-  font-family: 'Norwester';
-  text-transform: uppercase;
-  margin: 24px;
+.box {
+  width: 500px;
+  height: 300px;
+  // background: blue;
+  display: inline-block;
+}
+
+.box-full {
+  width: 100%;
+  border: 6px solid $red;
+}
+
+.rhymebox {
+  background-color: rebeccapurple;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.skills-gif {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-image:url('http://www.codeforest.net/wp-content/uploads/2013/05/backbone.png');
+  background-size: 100%;
+}
+
+.skills-js {
+  @extend .skills-gif;
+}
+
+.skills-web {
+  @extend .skills-gif;
+}
+
+.skills-dev {
+  @extend .skills-gif;
+
+}
+
+.project-summary {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.project-main-image {
+  width: 100%;
+  height: 400px;
+}
+
+.project-description {
+  text-align: center;
+  margin: 50px 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255,255,255,.8);
+  a {
+    color: $red;
+  }
+}
+
+.nav-wrap {
+  width: 1022px;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+}
+
+.nav-logo {
+  padding-top: 10px;
+
+}
+
+.nav-links-wrap {
+  font-family: "Montserrat";
+  text-align: right;
+  padding-top: 10px;
+  width: 50%;
+  li {
+    padding-top: 16px;
+    height: 20px; // pulls underline "border" closer
+    &:hover {
+      border-bottom: 2px solid $red;
+    }
+  }
+}
+
+section {
+  // border: 1px solid black;
+  background-color: white;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+li {
+  display: inline-block;
+
+}
+
+.tint {
+  height: 100%;
+  width: 100%;
 }
 
 .logo {
   width: 180px;
-  height: 180px;
+  height: 150px;
   border-radius: 100%;
-  margin: 0 auto;
+  position: absolute;
+  top: 34%;
+  left: 130px;
   padding-top: 32px;
-  background-color: $gold;
+  background-color: $red;
   h3 {
     color: black;
     font-size: 72px;
     letter-spacing: -17px;
-    margin-left: 2px;
+    margin: 34px 16px;
     font-family: 'Sedgwick Co';
   }
 }
 
 .logo-sm {
-  @extend .logo;
-  width: 60px;
-  height: 60px;
-  padding-top: 0px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 100%;
+  background-color: $red;
   h3 {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: -4px;
-    margin: 20px 0 0 -4px;
+    margin: 0;
+    padding: 16px 4px;
+    font-family: 'Sedgwick Co';
   }
-}
-
-.bar {
-  width: 98%;
-  height: 6px;
-  background-color: $gold;
-}
-
-.bar-bottom {
-  @extend .bar;
-  margin-bottom: 36px;
+  &:hover {
+    background-color: black;
+    border: none !important;
+  }
 }
 
 #splash {
-  background: url('https://images.unsplash.com/photo-1439003511744-2a0490ea0a88?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1275');
-  background-size: 100%;
-  background-size: 106%;
-  background-position-x: 98%;
-
-  width: 100%;
-  z-index: -1;
+  background-image: url('https://images.unsplash.com/photo-1445865272827-4894eb9d48de?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=da65030b962690764048bd8948d46e41');
   position: fixed;
-  padding: 0% 20%;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  h2 {
+  width: 100%;
+  height: 720px;
+  z-index: -1;
+  .tint {
+    background-color: rgba(0, 0, 0, .85);
+  }
+  h1, h2, .bar  {
+    position: absolute;
     color: white;
+    font-family: "Merriweather";
+    font-weight: 900;
+    font-family: "Source Serif Pro";
+    font-weight: 700;
+    font-size: 88px;
+    left: 340px;
+  }
+  h1 {
+    top: 230px;
+    margin: 0;
+  }
+  .bar {
+    top: 326px;
+  }
+  h2 {
+    top: 340px;
+    // font-family: "Sedgwick Co";
   }
 }
 
-#buffer {
-  background: none;
+h2 {
+  font-family: "Lato";
+  font-size: 48px;
+  color: $red;
+  margin: 0;
 }
-// #home2 {
-//   text-align: center;
-//   h1 {
-//     font-family: 'Oswald';
-//     text-transform: uppercase;
-//     font-size: 26rem;
-//     width: 60%;
-//     margin: 0 auto;
-//     line-height: .782;
-//   }
-//   h2  {
-//     font-family: 'Raleway';
-//     text-transform: uppercase;
-//     font-size: 8.6rem;
-//     font-weight: 100;
-//     width: 54%;
-//     margin: 15px auto;
-//     line-height: .69;
-//   }
-// }
-// #home {
-//   display: block;
-//   background: url('https://images.unsplash.com/photo-1439003511744-2a0490ea0a88?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1275');
-//   h1 {
-//     font-family: $serif;
-//     font-weight: 700;
-//     width: 50%;
-//     font-size: 15rem;
-//     line-height: .85;
-//     margin-top: 60px;
-//     margin-bottom: 14px;;
-//     margin-left: -4px
-//   }
-//   h2 {
-//     font-family: $serif;
-//     color: white;
-//     font-weight: 100;
-//     font-size: 10rem;
-//     padding-top: 10px;
-//     margin: 0 33%;
-//     line-height: .85;
-//   }
-//   .bar {
-//     height: 16px;
-//     background-color: $gold;
-//     width: 33.5%;
-//   }
-//   span {
-//     color: $gold;
-//     font-weight: 700;
-//   }
-// }
-
+.bar {
+  height: 8px;
+  width: 80px;
+  margin: 10px 0;
+  background-color: $red;
+}
 #about {
-  text-align: left;
-  .flex {
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
+  .about-text {
+    display: inline-block;
+    width: 70%;
   }
   p {
+    font-family: "Lato";
+    line-height: 1.8;
+  }
+  img {
+    float: right;
     display: inline-block;
-    width: 43%;
-    font-size: 18px;
-    text-align: left;
-    margin-right: 12px;
-    text-align: justify;
-    span {
-      float: left;
-      font-size: 48px;
-      margin: -8px 8px -10px 0px;
-      font-family: 'Norwester';
+  }
+}
+
+
+.project-box {
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  position: relative;
+  transition: all .5s ease-in-out;
+  &:hover {
+    h2 {
+      text-shadow: 0px 0px 6px rgba(132, 132, 132, 1);
+      transform: scale(1.1);
+    }
+  }
+  .tint {
+    transition: all .5s ease-in-out;
+  }
+  h2 {
+    color: white;
+    transition: all .5s ease-in-out;
+  }
+}
+
+#skills-img {
+  background-image: url('http://fillmurray.com/1200/400');
+  .tint {
+    background-color: rgba(244, 67, 54, .5);
+  }
+}
+
+#about-face {
+  background-image: url('http://fillmurray.com/1200/400');
+  .tint {
+    background-color: rgba(244, 67, 54, .5);
+  }
+}
+
+#contact-img {
+  background-image: url('http://fillmurray.com/1200/400');
+  .tint {
+    background-color: rgba(244, 67, 54, .5);
+  }
+}
+
+#chuckwagon {
+  background-image: url($chuckwagon-bg);
+  background-size: 300%;
+  background-position-x: 51%;
+  background-position-y: 47%;
+  .tint {
+    background-color: rgba(37,155,205, 1);
+    background-color: $chuckwagon-blue;
+  }
+  h2 {
+    left: 100px;
+    font-family: $chuckwagon-font;
+  }
+  &:hover {
+    .tint {
+      background-color: rgba(37,155,205, 0);
+      // background-color: $chuckwagon-blue;
     }
   }
 }
-p {
 
-}
-
-img {
-  width: 100%;
-}
-
-.img-prof {
-  display: inline-block;
-  width: 50%;
-  vertical-align: top;
-}
-
-#skills {
-  background-color: $gold;
-  color: black;
-  .bar {
-    background: white;
+#honebrew {
+  background-image: url('https://alopexadventures.com/wp-content/uploads/2015/06/Dollarphotoclub_56765387.jpg');
+  background-position-y: 23%;
+  background-size: 253%;
+  .tint {
+    background-color: $honebrew-yellow;
+  }
+  h2 {
+    left: 120px;
+    top: 80px;
+    font-size: 48px;
+    font-family: $honebrew-font;
+  }
+  &:hover {
+    .tint {
+      background-color: rgba(255, 188, 7, 0);
+    }
   }
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+#fetch {
+  background-image: url('https://images.unsplash.com/photo-1456143077270-30de0a1bf7bc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=14f25f544fa8452539c73d46e667a6db');
+  background-position-y: 28%;
+  background-position-x: 42%;
+  .tint {
+    background-color: $fetch-blue;
+  }
+  h2 {
+    left: 190px;
+    top: 70px;
+    font-size: 56px;
+    font-family: $fetch-font;
+  }
+  &:hover {
+    .tint {
+      background-color: rgba(19, 67, 123, 0);
+    }
+  }
 }
 
-li {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 1%;
+#be-mime {
+  background-image: url("http://gidbn.sites.caxton.co.za/wp-content/uploads/sites/96/2014/06/Sibo-Masondo-1.jpg");
+  background-position-y: 21%;
+  background-position-x: 50%;
+  .tint {
+    background-color: $be-mime-red;
+  }
+  h2 {
+    left: 164px;
+    top: 86px;
+    font-size: 50px;
+    font-family: $be-mime-font;
+    font-weight: 700;
+  }
+  &:hover {
+    .tint {
+      background-color: rgba(37,155,205, 0);
+    }
+  }
+}
+
+#powell-peralta {
+  background-image: url('../images/bg\ copy.jpg');
+  background-image: url("../images/bg copy.jpg");
+  background-size: 147%;
+  .tint {
+    background-color: $powell-peralta-red;
+  }
+  h2 {
+    left: 100px;
+    font-family: $powell-peralta-font;
+    font-weight: 800;
+  }
+  &:hover {
+    .tint {
+      background-color: rgba(37,155,205, 0);
+    }
+  }
+}
+
+#surf-paddle {
+  background-image: url('https://images.unsplash.com/photo-1456143077270-30de0a1bf7bc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=14f25f544fa8452539c73d46e667a6db');
+  background-image: url(https://wizardofspa.files.wordpress.com/2013/04/awesomely-ocean-waves.jpg);
+  background-position-y: 20%;
+  .tint {
+    background-color: $surf-paddle-blue;
+  }
+  h2 {
+    left: 78px;
+    top: 100px;
+    font-size: 38px;
+    font-weight: 400;
+    font-family: $surf-paddle-font;
+  }
+  &:hover {
+    .tint {
+      background-color: rgba(37,155,205, 0);
+    }
+  }
+}
+
+.tech {
+  text-align: center;
+  ul {
+    display: block;
+  }
+  h3 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+  }
+}
+
+.skillname {
+  display: block;
+}
+
+.skillarray {
+  display: none;
+}
+
+.skillbox {
+  @extend .box;
+  color: white !important;
+  margin: 10px 0;
+  &:hover {
+    cursor: pointer;
+    .skillname {
+      display: none;
+    }
+    .skillarray {
+      display: block;
+    }
+  }
 }
 
 .icon-box {
-  width: 80px;
+  width: 70px;
+  margin: 0 20px;
+  transition: all .5s ease-in-out;
+  &:hover {
+    h4 {
+      color: black;
+    }
+  }
   img {
     width: 100%;
   }
-}
-
-.carousel-inner {
-  div {
-    height: 400px;
-  }
-}
-
-#contact {
-  background: black;
-  color: white;
-  .logo {
-    margin-top: 36px;
-  }
-}
-
-.contact-line {
-  .glyphicon, h4 {
-    display: inline-block;
-    font-size: 3rem;
-    vertical-align: middle;
-  }
-  .glyphicon {
-    color: $gold;
-  }
   h4 {
-    font-family: 'Norwester';
+    margin: 0;
+    color: transparent;
+    transition: all .5s ease-in-out;
   }
 }
