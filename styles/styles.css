@@ -5,7 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  text-align: center; }
+  text-align: center;
+  color: #F44336; }
 
 a {
   text-decoration: none; }
@@ -98,9 +99,7 @@ h1 {
 
 h2 {
   font-family: "Lato";
-  font-size: 48px;
-  color: #F44336;
-  margin: 0; }
+  font-size: 48px; }
 
 .box, .skillbox {
   width: 500px;
@@ -109,10 +108,21 @@ h2 {
 
 .box-full {
   width: 100%;
+  color: white;
+  background-color: #F44336;
   border: 6px solid #F44336; }
+  .box-full a {
+    color: white; }
+  .box-full:hover {
+    background-color: white; }
+    .box-full:hover a {
+      color: #F44336; }
 
 .rhymebox {
   background-color: rebeccapurple; }
+  .rhymebox h2 {
+    margin: 0;
+    color: #F44336; }
   .rhymebox:hover {
     cursor: pointer; }
 
@@ -227,10 +237,12 @@ h2 {
     text-transform: uppercase; }
 
 .skillname {
-  display: block; }
+  display: block;
+  color: #F44336; }
 
 .skillarray {
-  display: none; }
+  display: none;
+  color: #F44336; }
 
 .skillbox {
   color: white !important;
