@@ -1,0 +1,11 @@
+<div class="tech">
+  <h3>{{ skillname }}</h3>
+  <ul>
+    <li ng-repeat="technology in technologies track by $index">
+      <div class="icon-box">
+        <img src="{{ technology.icon }}" alt="" />
+        <h4>{{ technology.name }}</h4>
+      </div>
+    </li>
+  </ul>
+</div>

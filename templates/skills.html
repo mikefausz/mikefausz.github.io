@@ -1,0 +1,18 @@
+<div class="container listing-detail">
+  <div class="project-detail" id="skills-img">
+    <div class="tint" >
+      <div class="center-wrap">
+        <h1>SKILLS</h1>
+      </div>
+    </div>
+  </div>
+
+<skills-section ng-repeat="skill in skills track by $index"
+  number="{{ skill.number }}"
+  skillname="{{ skill.skillname }}"
+  technologies=" skill.technologies "
+>
+
+</skills-section>
+
+</div>

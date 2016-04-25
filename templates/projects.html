@@ -1,0 +1,17 @@
+<div class="container listing-detail">
+  <ul>
+    <project-listing ng-repeat="project in projects"
+
+      name="{{ project.name }}"
+      displayname="{{ project.displayname }}"
+      number="{{ project.number }}"
+      color="{{ project.color }}"
+      font="{{ project.font }}"
+      fontsize="{{ project.fontsize }}"
+      cover="{{ project.cover }}"
+      description="{{ project.descShort }}"
+      tech="{{ project.tech }}"
+      images="{{ project.images }}">
+
+    </project-listing>
+</div>
