@@ -10,7 +10,7 @@ angular
         summary: "Chuckwagon is an iOS app that displays interactive maps of food trucks near the user’s location.",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         tech: ["Ionic", "AngularJS", "Google Maps API", "Design"],
-        url: '/chuckwagon',
+        url: '/chuckwagon/public/myApp/www/#/tab/home',
         color: 'rgba(37,155,205, .75)',
         font: "36px 'Bevan'",
         cover: '../images/mapwide.png',

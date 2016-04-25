@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  color: $red;
 }
 
 a {
@@ -125,8 +126,6 @@ h1 {
 h2 {
   font-family: "Lato";
   font-size: 48px;
-  color: $red;
-  margin: 0;
 }
 
 .box {
@@ -137,11 +136,26 @@ h2 {
 
 .box-full {
   width: 100%;
+  color: white;
+  background-color: $red;
   border: 6px solid $red;
+  a {
+    color: white;
+  }
+  &:hover {
+    background-color: white;
+    a {
+      color: $red;
+    }
+  }
 }
 
 .rhymebox {
   background-color: rebeccapurple;
+  h2 {
+    margin: 0;
+    color: $red;
+  }
   &:hover {
     cursor: pointer;
   }
@@ -301,10 +315,12 @@ h2 {
 
 .skillname {
   display: block;
+  color: $red;
 }
 
 .skillarray {
   display: none;
+  color: $red;
 }
 
 .skillbox {
