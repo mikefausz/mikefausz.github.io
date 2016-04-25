@@ -1,17 +1,33 @@
 <div class="container listing-detail">
-  <ul>
-    <project-listing ng-repeat="project in projects"
+  <div class="project-detail" id="projects-img">
+    <div class="tint" >
+      <div class="center-wrap">
+        <h1>WORK</h1>
+      </div>
+    </div>
+  </div>
 
-      name="{{ project.name }}"
-      displayname="{{ project.displayname }}"
-      number="{{ project.number }}"
-      color="{{ project.color }}"
-      font="{{ project.font }}"
-      fontsize="{{ project.fontsize }}"
-      cover="{{ project.cover }}"
-      description="{{ project.descShort }}"
-      tech="{{ project.tech }}"
-      images="{{ project.images }}">
+  <section>
+    <h2>The things I have done, let me show you them.</h2>
+  </section>
+  
+  <section>
+    <ul>
+      <project-listing ng-repeat="project in projects"
 
-    </project-listing>
+        name="{{ project.name }}"
+        displayname="{{ project.displayname }}"
+        number="{{ project.number }}"
+        color="{{ project.color }}"
+        font="{{ project.font }}"
+        fontsize="{{ project.fontsize }}"
+        cover="{{ project.cover }}"
+        description="{{ project.descShort }}"
+        tech="{{ project.tech }}"
+        images="{{ project.images }}">
+
+      </project-listing>
+    </ul>
+  </section>
+
 </div>

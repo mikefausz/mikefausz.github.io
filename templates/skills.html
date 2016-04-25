@@ -7,12 +7,14 @@
     </div>
   </div>
 
-<skills-section ng-repeat="skill in skills track by $index"
-  number="{{ skill.number }}"
-  skillname="{{ skill.skillname }}"
-  technologies=" skill.technologies "
->
+  <section>
+    <skills-section ng-repeat="skill in skills track by $index"
+      number="{{ skill.number }}"
+      skillname="{{ skill.skillname }}"
+      technologies=" skill.technologies ">
 
-</skills-section>
+    </skills-section>
+  </section>
+
 
 </div>

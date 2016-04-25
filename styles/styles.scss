@@ -1,163 +1,13 @@
+// VARIABLES
 $red: #F44336; // 	rgba(244, 67, 54, 1)
-// CHUCKWAGON VARIABLES
-$chuckwagon-blue: rgba(37,155,205, .75);
-$chuckwagon-font: "Bevan";
-$chuckwagon-bg: '../images/mapwide.png';
 
-// Fetch! VARIABLES
-$fetch-blue: rgba(19, 67, 123, .85);
-// $fetch-blue: rgba(35, 99, 173, .85);
-$fetch-font: "Lobster";
-
-// be mime VARIABLES
-$be-mime-red: rgba(71, 1, 1, .85);
-// $be-mime-font: "Poiret One";
-$be-mime-font: "Josefin Sans";
-
-// HONEBREW VARIABLES
-$honebrew-yellow: rgba(255, 188, 7, .85);
-$honebrew-font: "Bree Serif";
-
-// POWELL-PERALTA
-$powell-peralta-red: rgba(180,41,46, .85);
-$powell-peralta-font: "Open Sans";
-
-// SURF & PADDLE CO.
-$surf-paddle-blue: rgba(20,111,179,.85);
-$surf-paddle-font: "Open Sans";
-
+// FONTS
 @font-face {
   font-family: Sedgwick Co;
   src: local("Sedgwick Co"),
 }
 
-@font-face {
-  font-family: Norwester;
-  src: local("Norwester"),
-}
-
-.container {
-  width: 1020px;
-  margin: 0 auto;
-}
-
-.buffer {
-  padding-top: 720px;
-}
-
-h1 {
-  font-family: 'Montserrat'
-}
-
-h4 {
-  font-style: italic;
-  font-size: 28px;
-  color: grey;
-}
-
-.project-listing {
-  margin: 10px 0;
-  transition: all .5s ease-in-out;
-  &:hover {
-    h2 {
-      text-shadow: 0px 0px 6px rgba(132, 132, 132, 1);
-    }
-    .tint {
-      background-color: transparent !important;
-    }
-  }
-  .tint {
-    transition: all .5s ease-in-out;
-  }
-  h2 {
-    color: white;
-    transition: all .5s ease-in-out;
-  }
-}
-
-.listing-detail {
-  margin-top: 90px;
-}
-
-.project-detail {
-  height: 250px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.center-wrap {
-  position: absolute;
-  width: 1020px;
-  height: 250px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-}
-
-.center-wrap-sm {
-  @extend .center-wrap;
-  width: 500px;
-  height: 300px;
-}
-
-.box {
-  width: 500px;
-  height: 300px;
-  // background: blue;
-  display: inline-block;
-}
-
-.box-full {
-  width: 100%;
-  border: 6px solid $red;
-}
-
-.rhymebox {
-  background-color: rebeccapurple;
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.skills-gif {
-  margin: auto;
-  width: 200px;
-  height: 200px;
-  background-image:url('http://www.codeforest.net/wp-content/uploads/2013/05/backbone.png');
-  background-size: 100%;
-}
-
-.skills-js {
-  @extend .skills-gif;
-}
-
-.skills-web {
-  @extend .skills-gif;
-}
-
-.skills-dev {
-  @extend .skills-gif;
-
-}
-
-.project-summary {
-  text-align: center;
-  margin: 50px 0;
-}
-
-.project-main-image {
-  width: 100%;
-  height: 400px;
-}
-
-.project-description {
-  text-align: center;
-  margin: 50px 0;
-}
-
+// GLOBAL STYLES
 body {
   margin: 0;
   padding: 0;
@@ -187,7 +37,6 @@ nav {
 
 .nav-logo {
   padding-top: 10px;
-
 }
 
 .nav-links-wrap {
@@ -204,11 +53,14 @@ nav {
   }
 }
 
-section {
-  // border: 1px solid black;
-  background-color: white;
+.container {
+  width: 1020px;
+  margin: 0 auto;
 }
 
+section {
+  margin: 100px 0;
+}
 
 ul {
   list-style-type: none;
@@ -221,7 +73,6 @@ ul {
 
 li {
   display: inline-block;
-
 }
 
 .tint {
@@ -267,36 +118,8 @@ li {
   }
 }
 
-#splash {
-  background-image: url('https://images.unsplash.com/photo-1445865272827-4894eb9d48de?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=da65030b962690764048bd8948d46e41');
-  position: fixed;
-  width: 100%;
-  height: 720px;
-  z-index: -1;
-  .tint {
-    background-color: rgba(0, 0, 0, .85);
-  }
-  h1, h2, .bar  {
-    position: absolute;
-    color: white;
-    font-family: "Merriweather";
-    font-weight: 900;
-    font-family: "Source Serif Pro";
-    font-weight: 700;
-    font-size: 88px;
-    left: 340px;
-  }
-  h1 {
-    top: 230px;
-    margin: 0;
-  }
-  .bar {
-    top: 326px;
-  }
-  h2 {
-    top: 340px;
-    // font-family: "Sedgwick Co";
-  }
+h1 {
+  font-family: 'Montserrat'
 }
 
 h2 {
@@ -305,12 +128,37 @@ h2 {
   color: $red;
   margin: 0;
 }
-.bar {
-  height: 8px;
-  width: 80px;
-  margin: 10px 0;
-  background-color: $red;
+
+.box {
+  width: 500px;
+  height: 300px;
+  display: inline-block;
 }
+
+.box-full {
+  width: 100%;
+  border: 6px solid $red;
+}
+
+.rhymebox {
+  background-color: rebeccapurple;
+  &:hover {
+    cursor: pointer;
+  }
+}
+///////////// HOME project-main-image
+#splash {
+  margin: 150px 0;
+  h1 {
+    font-family: 'Montserrat';
+    font-size: 100px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 84px;
+  }
+}
+
 #about {
   .about-text {
     display: inline-block;
@@ -327,6 +175,23 @@ h2 {
 }
 
 
+// PROJECT LISTING DIRECTIVE
+.project-listing {
+  margin: 10px 0;
+  transition: all .5s ease-in-out;
+  &:hover {
+    .tint {
+      background-color: transparent !important;
+    }
+  }
+  .tint {
+    transition: all .5s ease-in-out;
+  }
+  h2 {
+    transition: all .5s ease-in-out;
+  }
+}
+
 .project-box {
   width: 500px;
   height: 300px;
@@ -336,7 +201,7 @@ h2 {
   &:hover {
     h2 {
       text-shadow: 0px 0px 6px rgba(132, 132, 132, 1);
-      transform: scale(1.1);
+      // transform: scale(1.1);
     }
   }
   .tint {
@@ -348,8 +213,62 @@ h2 {
   }
 }
 
+
+/////////// WORK PAGE
+.listing-detail {
+  margin-top: 90px;
+}
+
+.project-detail {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.center-wrap {
+  position: absolute;
+  width: 1020px;
+  height: 250px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.center-wrap-sm {
+  @extend .center-wrap;
+  width: 500px;
+  height: 300px;
+}
+
+.project-summary {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.project-main-image {
+  width: 100%;
+  height: 400px;
+}
+
+.project-description {
+  text-align: center;
+  margin: 50px 0;
+}
+
+#projects-img {
+  background-image: url('https://images.unsplash.com/photo-1417733403748-83bbc7c05140?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=4c01399b01c8b4b1c5a8cfcdee7cfea2');
+  background-position-y: 60%;
+  .tint {
+    background-color: rgba(244, 67, 54, .5);
+  }
+}
+
 #skills-img {
-  background-image: url('http://fillmurray.com/1200/400');
+  background-image: url('https://images.unsplash.com/photo-1453806839674-d1a9087ca1ed?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=6732ffac2eb50683b1a18b874e295a25');
+  background-position-y: 96%;
   .tint {
     background-color: rgba(244, 67, 54, .5);
   }
@@ -366,128 +285,6 @@ h2 {
   background-image: url('http://fillmurray.com/1200/400');
   .tint {
     background-color: rgba(244, 67, 54, .5);
-  }
-}
-
-#chuckwagon {
-  background-image: url($chuckwagon-bg);
-  background-size: 300%;
-  background-position-x: 51%;
-  background-position-y: 47%;
-  .tint {
-    background-color: rgba(37,155,205, 1);
-    background-color: $chuckwagon-blue;
-  }
-  h2 {
-    left: 100px;
-    font-family: $chuckwagon-font;
-  }
-  &:hover {
-    .tint {
-      background-color: rgba(37,155,205, 0);
-      // background-color: $chuckwagon-blue;
-    }
-  }
-}
-
-#honebrew {
-  background-image: url('https://alopexadventures.com/wp-content/uploads/2015/06/Dollarphotoclub_56765387.jpg');
-  background-position-y: 23%;
-  background-size: 253%;
-  .tint {
-    background-color: $honebrew-yellow;
-  }
-  h2 {
-    left: 120px;
-    top: 80px;
-    font-size: 48px;
-    font-family: $honebrew-font;
-  }
-  &:hover {
-    .tint {
-      background-color: rgba(255, 188, 7, 0);
-    }
-  }
-}
-
-#fetch {
-  background-image: url('https://images.unsplash.com/photo-1456143077270-30de0a1bf7bc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=14f25f544fa8452539c73d46e667a6db');
-  background-position-y: 28%;
-  background-position-x: 42%;
-  .tint {
-    background-color: $fetch-blue;
-  }
-  h2 {
-    left: 190px;
-    top: 70px;
-    font-size: 56px;
-    font-family: $fetch-font;
-  }
-  &:hover {
-    .tint {
-      background-color: rgba(19, 67, 123, 0);
-    }
-  }
-}
-
-#be-mime {
-  background-image: url("http://gidbn.sites.caxton.co.za/wp-content/uploads/sites/96/2014/06/Sibo-Masondo-1.jpg");
-  background-position-y: 21%;
-  background-position-x: 50%;
-  .tint {
-    background-color: $be-mime-red;
-  }
-  h2 {
-    left: 164px;
-    top: 86px;
-    font-size: 50px;
-    font-family: $be-mime-font;
-    font-weight: 700;
-  }
-  &:hover {
-    .tint {
-      background-color: rgba(37,155,205, 0);
-    }
-  }
-}
-
-#powell-peralta {
-  background-image: url('../images/bg\ copy.jpg');
-  background-image: url("../images/bg copy.jpg");
-  background-size: 147%;
-  .tint {
-    background-color: $powell-peralta-red;
-  }
-  h2 {
-    left: 100px;
-    font-family: $powell-peralta-font;
-    font-weight: 800;
-  }
-  &:hover {
-    .tint {
-      background-color: rgba(37,155,205, 0);
-    }
-  }
-}
-
-#surf-paddle {
-  background-image: url('https://images.unsplash.com/photo-1456143077270-30de0a1bf7bc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=14f25f544fa8452539c73d46e667a6db');
-  background-image: url(https://wizardofspa.files.wordpress.com/2013/04/awesomely-ocean-waves.jpg);
-  background-position-y: 20%;
-  .tint {
-    background-color: $surf-paddle-blue;
-  }
-  h2 {
-    left: 78px;
-    top: 100px;
-    font-size: 38px;
-    font-weight: 400;
-    font-family: $surf-paddle-font;
-  }
-  &:hover {
-    .tint {
-      background-color: rgba(37,155,205, 0);
-    }
   }
 }
 
