@@ -1,20 +1,33 @@
-<div class="container listing-detail">
-  <div class="project-detail" id="skills-img">
-    <div class="tint" >
-      <div class="center-wrap">
-        <h1>SKILLS</h1>
+<div id="skills">
+
+  <div class="container listing-detail">
+    <div class="project-detail" id="skills-img">
+      <div class="tint" >
+        <div class="center-wrap">
+          <h1>SKILLS</h1>
+        </div>
       </div>
     </div>
+    <section>
+      <div class="" ng-repeat="skill in skills track by $index">
+        <section ng-style="{'background-color': skill.color}" class="box-full">
+          <h2>{{ skill.skillname }}</h2>
+        </section>
+        <ul class="flex">
+          <li class="skill-li" ng-repeat="technology in skill.technologies">
+            <a ng-href="{{ technology.link }}">
+              <div ng-style="{'background-color': technology.color}" class="box" >
+                <div class="center-wrap-sm">
+                  <div ng-style="{'width': technology.iconwidth}" class="icon-box">
+                    <img ng-src="{{ technology.icon }}" alt="" />
+                  </div>
+                  <h2>{{ technology.name }}</h2>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </div>
-
-  <section>
-    <skills-section ng-repeat="skill in skills track by $index"
-      number="{{ skill.number }}"
-      skillname="{{ skill.skillname }}"
-      technologies=" skill.technologies ">
-
-    </skills-section>
-  </section>
-
-
 </div>

@@ -9,33 +9,45 @@ angular
         technologies: [
           {
             name: "AngularJS",
-            icon: "https://lh3.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w1012-h1072/AngularJS-Shield-large.png",
-            link: "",
+            icon: "images/angular-icon.png",
+            iconwidth: "150px",
+            link: "#/project/6",
+            color: "rgb(176,65,57)",
           },
           {
             name: "Backbone.JS",
-            icon: "http://www.codeforest.net/wp-content/uploads/2013/05/backbone.png",
-            link: "",
+            icon: "images/backbone-icon.png",
+            iconwidth: "120px",
+            link: "#/project/3",
+            color: "rgb(4,115,179)",
           },
           {
             name: "AJAX",
-            icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/AJAX_logo_by_gengns.svg/2000px-AJAX_logo_by_gengns.svg.png",
-            link: "",
+            icon: "images/ajax-icon.png",
+            iconwidth: "200px",
+            link: "#/project/2",
+            color: "rgb(4,132,204)",
           },
           {
             name: "Underscore.js",
-            icon: "http://brandonquintanaconsulting.com/img/services/underscore.png",
-            link: "",
+            icon: "images/underscore-icon.png",
+            iconwidth: "200px",
+            link: "#/project/",
+            color: "rgb(4,60,92)"
           },
           {
             name: "jQuery",
-            icon: "https://pbs.twimg.com/profile_images/2192925422/jquery_logo_400x400.png",
-            link: "",
+            icon: "images/jquery-icon.png",
+            iconwidth: "160px",
+            link: "#/project/1",
+            color: "rgb(28,163,203)"
           },
           {
             name: "Ionic",
-            icon: "http://ionicframework.com/img/ionic-logo-blog.png",
-            link: "",
+            icon: "images/ionic-icon.png",
+            iconwidth: "160px",
+            link: "#/project/0",
+            color: "rgb(76,140,252)"
           },
         ]
       },
@@ -46,23 +58,31 @@ angular
         technologies: [
           {
             name: "HTML5",
-            icon: "https://image.freepik.com/free-icon/html-5-logo_318-53222.png",
-            link: "",
+            icon: "images/html5-icon.png",
+            iconwidth: "130px",
+            link: "#/project/4",
+            color: "rgb(232,84,40)"
           },
           {
             name: "CSS3",
-            icon: "https://www.webreflection.co.uk/img/css3.svg",
-            link: "",
+            icon: "images/css3-icon.png",
+            iconwidth: "130px",
+            link: "#/project/5",
+            color: "rgb(15,125,197)"
           },
           {
             name: "Sass",
-            icon: "http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg",
-            link: "",
+            icon: "images/sass-icon.png",
+            iconwidth: "180px",
+            link: "#/project/4",
+            color: "rgb(204,100,156)"
           },
           {
             name: "Bootstrap",
-            icon: "https://worldvectorlogo.com/logos/bootstrap-4.svg",
-            link: "",
+            icon: "images/bootstrap-icon.png",
+            iconwidth: "160px",
+            link: "#/project/6",
+            color: "rgb(89,59,127)"
           },
         ]
       },
@@ -73,23 +93,31 @@ angular
         technologies: [
           {
             name: "Bower",
-            icon: "http://plainicon.com/dboard/userprod/2800_a1826/prod_thumb/plainicon.com-50189-512px-616.png",
-            link: "",
+            icon: "images/bower-icon.png",
+            iconwidth: "180px",
+            link: "#/project/",
+            color: "rgb(251,203,52)"
           },
           {
             name: "npm",
-            icon: "https://www.npmjs.com/static/images/npm-logo.svg",
-            link: "",
+            icon: "images/npm-icon.png",
+            iconwidth: "180px",
+            link: "#/project/",
+            color: "rgb(204,60,52)"
           },
           {
             name: "Gulp",
-            icon: "https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png",
-            link: "",
+            icon: "images/gulp-icon.png",
+            iconwidth: "90px",
+            link: "#/project/0",
+            color: "rgb(235,75,83)"
           },
           {
             name: "Browserify",
-            icon: "http://adamcolejenkins.com/images/browserify.png",
-            link: "",
+            icon: "images/browserify-icon.png",
+            iconwidth: "180px",
+            link: "#/project/",
+            color: "rgb(61,108,147)"
           },
         ]
       },
@@ -100,18 +128,24 @@ angular
         technologies: [
           {
             name: "Java",
-            icon: "http://icons.iconarchive.com/icons/icons8/windows-8/128/Programming-Java-Coffee-Cup-Logo-icon.png",
+            icon: "images/java-icon.png",
+            iconwidth: "120px",
             link: "",
+            color: "rgb(12,108,180)",
           },
           {
             name: "C",
-            icon: "http://www.batracomputercentre.com/images/2222.png",
+            icon: "images/c-icon.png",
+            iconwidth: "110px",
             link: "",
+            color: "rgb(104,142,234)"
           },
           {
             name: "Command Line",
-            icon: "https://cdn0.iconfinder.com/data/icons/octicons/1024/terminal-128.png",
+            icon: "images/command-icon.png",
+            iconwidth: "120px",
             link: "",
+            color: "rgb(12,12,12)"
           },
         ]
       },
