@@ -8,9 +8,13 @@ $red: #F44336; // 	rgba(244, 67, 54, 1)
 }
 
 // GLOBAL STYLES
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   text-align: center;
   color: $red;
 }
@@ -47,7 +51,6 @@ nav {
   width: 50%;
   li {
     padding-top: 16px;
-    height: 20px; // pulls underline "border" closer
     &:hover {
       border-bottom: 2px solid $red;
     }
@@ -57,6 +60,7 @@ nav {
 .container {
   width: 1020px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 section {
@@ -67,6 +71,9 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.flex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -139,6 +146,9 @@ h2 {
   color: white;
   background-color: $red;
   border: 6px solid $red;
+  h2 {
+    padding: 30px 0;
+  }
   a {
     color: white;
   }
@@ -338,21 +348,29 @@ h2 {
   }
 }
 
-.icon-box {
-  width: 70px;
-  margin: 0 20px;
-  transition: all .5s ease-in-out;
+#skills {
+  .box-full {
+    border: none;
+    color: $red;
+  }
+}
+
+.skill-li {
+  margin: 10px 0;
   &:hover {
-    h4 {
-      color: black;
+    .icon-box {
+      display: block;
+    }
+    h2 {
+      display: none;
     }
   }
+}
+
+.icon-box {
+  margin: 0 auto;
+  display: none;
   img {
     width: 100%;
-  }
-  h4 {
-    margin: 0;
-    color: transparent;
-    transition: all .5s ease-in-out;
   }
 }
