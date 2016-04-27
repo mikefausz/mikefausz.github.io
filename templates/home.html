@@ -6,13 +6,21 @@
   </section>
 
   <section id="about">
-    <div class="about-text">
-      <name-rhymer
-        mikes="mikes"
-        fauszs="fauszs">
-      </name-rhymer>
-    </div>
-    <img src="http://www.fillmurray.com/300/300" alt="" />
+    <ul class="flex">
+      <li class="about-text">
+        <!-- <div > -->
+          <name-rhymer
+            mikes="mikes"
+            fauszs="fauszs">
+          </name-rhymer>
+        <!-- </div> -->
+      </li>
+      <li>
+        <div class="box prof-img">
+
+        </div>
+      </li>
+    </ul>
 </section>
 
 <section id="work">
@@ -30,6 +38,8 @@
       fontsize="{{ project.fontsize }}"
       url="{{ project.url}}"
       cover="{{ project.cover }}"
+      box="{{ project.box }}"
+      header="{{ project.header }}"
       description="{{ project.descShort }}"
       tech="{{ project.tech }}"
       images="{{ project.images }}">

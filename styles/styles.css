@@ -144,10 +144,6 @@ h2 {
   #splash h2 {
     font-size: 84px; }
 
-#about .about-text {
-  display: inline-block;
-  width: 70%; }
-
 #about p {
   font-family: "Lato";
   line-height: 1.8; }
@@ -230,7 +226,8 @@ h2 {
     background-color: rgba(244, 67, 54, 0.5); }
 
 #about-face {
-  background-image: url("http://fillmurray.com/1200/400"); }
+  background-image: url("../images/me/about-header.png");
+  background-size: 1046px; }
   #about-face .tint {
     background-color: rgba(244, 67, 54, 0.5); }
 
@@ -281,3 +278,19 @@ h2 {
   display: none; }
   .icon-box img {
     width: 100%; }
+
+#resume {
+  background-color: #F44336; }
+  #resume .icon-box {
+    display: none;
+    width: 100px; }
+  #resume:hover .icon-box {
+    display: block; }
+  #resume:hover h2 {
+    display: none; }
+
+.prof-img {
+  background-image: url("../images/me/about-side.png");
+  background-size: cover; }
+  .prof-img:hover {
+    background-image: url("../images/me/about-straight.png"); }

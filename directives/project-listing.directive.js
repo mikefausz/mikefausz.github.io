@@ -18,6 +18,8 @@ angular
         tech: '@',
         url: '@',
         cover: '@',
+        box: '@',
+        header: '@',
         images: '@',
       },
       link: function(scope, element, attributes) {
