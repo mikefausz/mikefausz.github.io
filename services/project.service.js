@@ -15,7 +15,8 @@ angular
         url: 'https://mikefausz.github.io/chuckwagon/public/myApp/www/#/tab/home',
         color: 'rgba(37,155,205, .75)',
         font: "36px 'Bevan'",
-        cover: '../images/mapwide.png',
+        cover: '../images/projects/chuckwagon-box.png',
+        header: '../images/projects/chuckwagon-header.png',
         images: ['http://www.fillmurray.com/400/500']
       },
       {
