@@ -9,17 +9,49 @@
 
 <h2 class="project-summary">{{ project.summary }}</h2>
 
-<a ng-href="{{ project.url }}"><div class="project-main-image" ng-style="{'background-image': 'url({{ project.images[0] }})'}"></div>
+<a ng-href="{{ project.url }}">
+  <div class="project-main-image">
+    <img ng-src="{{ project.images[0]}}" alt="" />
+  </div>
 </a>
+
+<div class="" >
+  <section ng-style="{'background-color': project.color}" class="box-full">
+    <h2>Technology</h2>
+  </section>
+  <ul class="flex">
+    <li class="skill-li" ng-repeat="technology in tech">
+      <a ng-href="{{ technology.link }}">
+        <div ng-style="{'background-color': technology.color}" class="box" >
+          <div class="center-wrap-sm">
+            <div ng-style="{'width': technology.iconwidth}" class="icon-box">
+              <img ng-src="{{ technology.icon }}" alt="" />
+            </div>
+            <h2>{{ technology.name }}</h2>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+</section>
 
 <h2 class="project-description">{{ project.description }}</h2>
 
-<div class="project-main-image" ng-style="{'background-image': 'url({{ project.images[0] }})'}"></div>
-
-<ul>
-  <li ng-repeat="tech in project.tech"> {{ tech }} </li>
+<ul class="flex">
+  <div class="box">
+    <img ng-src="{{ project.images[1]}}" alt="" />
+  </div>
+  <div class="box">
+    <img ng-src="{{ project.images[2]}}" alt="" />
+  </div>
 </ul>
 
+<h2 class="project-description">{{ project.elab }}</h2>
+
+<div class="project-main-image">
+  <img ng-src="{{ project.images[3]}}" alt="" />
+</div>
 
 <ul class="project-nav">
   <project-listing

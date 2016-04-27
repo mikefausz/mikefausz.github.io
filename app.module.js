@@ -25,6 +25,6 @@ angular
       })
       .when('/contact', {
         templateUrl: "templates/contact.html",
-        controller: 'HomeController'
+        controller: 'ContactsController'
       });
   });
