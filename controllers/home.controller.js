@@ -17,6 +17,15 @@ angular
     if($routeParams.number) {
       $scope.project = ProjectService.getProject($routeParams.number);
 
+      var skillsArr = [];
+      angular.forEach($scope.project.tech, function(tech) {
+        console.log("Getting " + tech + "...");
+        skillsArr.push(SkillsService.getTech(tech));
+      });
+
+      console.log("SKILLS ARRAY: " + skillsArr);
+      $scope.tech = skillsArr;
+
       if($routeParams.number === '5') {
         $scope.prevProject = ProjectService.getProject(parseInt($routeParams.number) - 1);
         $scope.nextProject = ProjectService.getProject(0);
