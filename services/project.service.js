@@ -15,7 +15,8 @@ angular
         url: 'https://mikefausz.github.io/chuckwagon/public/myApp/www/#/tab/home',
         color: 'rgba(37,155,205, .75)',
         font: "36px 'Bevan'",
-        cover: '../images/projects/chuckwagon-box.png',
+        cover: '../images/projects/chuckwagon-header.png',
+        box: '../images/projects/chuckwagon-box.png',
         header: '../images/projects/chuckwagon-header.png',
         images: ['http://www.fillmurray.com/400/500']
       },
@@ -31,7 +32,9 @@ angular
         url: '/fartsy',
         color: 'rgba(252,91,4,.85)',
         font: "normal 48px 'Merriweather'",
-        cover: "https://images.unsplash.com/photo-1454873019514-eae2f086587a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=c18a396c481845cce89abb6a9e0e9257",
+        cover: "../images/projects/fartsy-header.png",
+        box: '../images/projects/fartsy-box.png',
+        header: '../images/projects/fartsy-header.png',
         images: ['images/projects/fartsy-full.png', 'images/projects/fartsy-search.png', 'images/projects/fartsy-detail.png', 'images/projects/fartsy-cart.png']
       },
       {
@@ -46,7 +49,10 @@ angular
         url: '/honebrew',
         color: 'rgba(255, 188, 7, .85)',
         font: "48px 'Bree Serif'",
-        cover: "https://alopexadventures.com/wp-content/uploads/2015/06/Dollarphotoclub_56765387.jpg",
+        // cover: "https://alopexadventures.com/wp-content/uploads/2015/06/Dollarphotoclub_56765387.jpg",
+        cover: "../images/projects/honebrew-header.png",
+        box: '../images/projects/honebrew-box.png',
+        header: '../images/projects/honebrew-header.png',
         images: ['images/projects/honebrew-full.png', 'images/projects/honebrew-search.png', 'images/projects/honebrew-list.png', 'images/projects/honebrew-link.png', 'images/projects/honebrew-directions.png']
       },
       {
@@ -58,10 +64,13 @@ angular
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         elab: "You can update quantity or remove items from your cart.",
         tech: [3, 2],
-        url: '',
+        url: 'http://ec2-52-201-38-61.compute-1.amazonaws.com:4567/',
         color: 'rgba(19, 67, 123, .85)',
         font: "56px 'Lobster'",
-        cover: "https://images.unsplash.com/photo-1456143077270-30de0a1bf7bc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=14f25f544fa8452539c73d46e667a6db",
+        // cover: "https://images.unsplash.com/photo-1456143077270-30de0a1bf7bc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=14f25f544fa8452539c73d46e667a6db",
+        cover: "../images/projects/fetch-header.png",
+        box: '../images/projects/fetch-box.png',
+        header: '../images/projects/fetch-header.png',
         images: ['images/projects/fetch-full.png', 'images/projects/fetch-user.png', 'images/projects/fetch-driver.png']
       },
 
@@ -77,8 +86,10 @@ angular
         url: '/powell-peralta',
         color: 'rgba(180,41,46, .85)',
         font: "700 36px 'Open Sans'",
-        cover: '../images/bg copy.jpg',
-        images: ['http://www.fillmurray.com/400/500']
+        cover: "../images/projects/powellperalta-header.png",
+        box: '../images/projects/powellperalta-box.png',
+        header: '../images/projects/powellperalta-header.png',
+        images: ["../images/projects/powellperalta-full.png"]
       },
       {
         number: 5,
@@ -92,8 +103,11 @@ angular
         url: '/big-buck-hunter',
         color: 'rgba(103,103,47,.85)',
         font: "normal 38px 'Permanent Marker'",
-        cover: "https://images.unsplash.com/photo-1426170042593-200f250dfdaf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=7b6f9191e6a631a54b2e09ba6a2f06e6",
-        images: ['http://www.fillmurray.com/400/500']
+        // cover: "https://images.unsplash.com/photo-1426170042593-200f250dfdaf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=7b6f9191e6a631a54b2e09ba6a2f06e6",
+        cover: "../images/projects/bigbuck-header.png",
+        box: '../images/projects/bigbuck-box.png',
+        header: '../images/projects/bigbuck-header.png',
+        images: ['../images/projects/bigbuck-full.png']
       },
       {
         number: 6,
@@ -107,8 +121,11 @@ angular
         url: '/surf-and-paddle',
         color: 'rgba(20,111,179,.85)',
         font: "normal 38px 'Open Sans'",
-        cover: "https://wizardofspa.files.wordpress.com/2013/04/awesomely-ocean-waves.jpg",
-        images: ['http://www.fillmurray.com/400/500']
+        // cover: "https://wizardofspa.files.wordpress.com/2013/04/awesomely-ocean-waves.jpg",
+        cover: "../images/projects/surfpaddle-header.png",
+        box: '../images/projects/surfpaddle-box.png',
+        header: '../images/projects/surfpaddle-header.png',
+        images: ['../images/projects/surfpaddle-full.png']
       },
       {
         number: 7,
@@ -122,8 +139,11 @@ angular
         url: '',
         color: 'rgba(71, 1, 1, .85)',
         font: "50px 'Josefin Sans'",
-        cover: "http://gidbn.sites.caxton.co.za/wp-content/uploads/sites/96/2014/06/Sibo-Masondo-1.jpg",
-        images: ['http://www.fillmurray.com/400/500']
+        // cover: "http://gidbn.sites.caxton.co.za/wp-content/uploads/sites/96/2014/06/Sibo-Masondo-1.jpg",
+        cover: "../images/projects/bemime-header.png",
+        box: '../images/projects/bemime-box.png',
+        header: '../images/projects/bemime-header.png',
+        images: ['../images/projects/bemime-full.png']
       },
       {
         number: 8,
@@ -137,8 +157,10 @@ angular
         url: '',
         color: 'rgba(90, 85, 85, .85)',
         font: "54px 'Yantramanav', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, sans-serif",
-        cover: "",
-        images: ['http://www.fillmurray.com/400/500']
+        cover: "../images/projects/todos-header.png",
+        box: '../images/projects/todos-box.png',
+        header: '../images/projects/todos-header.png',
+        images: ['../images/projects/todos-full.png']
       },
       {
         number: 9,
@@ -152,8 +174,11 @@ angular
         url: '',
         color: 'rgba(84,172,236, .85)',
         font: "50px 'Montserrat'",
-        cover: "https://thenpbhive.files.wordpress.com/2009/11/sp813_cartmans_incredible_gift.jpg",
-        images: ['http://www.fillmurray.com/400/500']
+        // cover: "https://thenpbhive.files.wordpress.com/2009/11/sp813_cartmans_incredible_gift.jpg",
+        cover: "../images/projects/butters-header.png",
+        box: '../images/projects/butters-box.png',
+        header: '../images/projects/butters-header.png',
+        images: ['../images/projects/butters-full.png']
       },
     ];
 
