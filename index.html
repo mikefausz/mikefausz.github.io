@@ -17,7 +17,7 @@
     <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
   </head>
   <body ng-app="portfolio">
-    <nav>
+    <nav class="nav-top">
       <ul class="nav-wrap flex">
         <a href="#/" class="nav-logo">
           <div class="logo-sm"><h3>MF</h3></div>
@@ -32,6 +32,23 @@
 
     <ng-view autoscroll="true"></ng-view>
 
+    <nav class="nav-bottom">
+      <ul class="nav-wrap flex">
+        <li>
+          <a href="#/" class="nav-logo">
+            <div class="logo-sm"><h3>MF</h3></div>
+          </a>
+          <h4>Copyright © 2016 Mike Fausz.</h4>
+        </li>
+        <li>
+          <ul class="nav-links-wrap">
+            <li><a href="#/projects">WORK</a></li>
+            <li><a href="#/skills">SKILLS</a></li>
+            <li><a href="#/about">ABOUT</a></li>
+            <li><a href="#/contact">CONTACT</a></li>
+          </ul>
+        </li>
+    </nav>
     <!-- <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script> -->
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script> -->
     <script src="node_modules/angular/angular.js" charset="utf-8"></script>

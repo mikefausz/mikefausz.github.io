@@ -15,13 +15,7 @@ a {
   text-decoration: none; }
 
 nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1;
   background-color: rgba(255, 255, 255, 0.8); }
-  nav a {
-    color: #F44336; }
 
 .nav-wrap {
   width: 1022px;
@@ -34,12 +28,42 @@ nav {
 .nav-links-wrap {
   font-family: "Montserrat";
   text-align: right;
-  padding-top: 10px;
-  width: 50%; }
+  padding-top: 10px; }
   .nav-links-wrap li {
-    padding-top: 16px; }
-    .nav-links-wrap li:hover {
-      border-bottom: 2px solid #F44336; }
+    padding-top: 16px;
+    padding-bottom: 2px;
+    margin-left: 32px; }
+
+.nav-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1; }
+  .nav-top a {
+    color: #F44336; }
+  .nav-top li:hover {
+    border-bottom: 2px solid #F44336; }
+  .nav-top .nav-links-hover {
+    width: 50%; }
+
+.nav-bottom .logo-sm {
+  background-color: gainsboro; }
+  .nav-bottom .logo-sm:hover {
+    background-color: #F44336; }
+
+.nav-bottom h4 {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: Lato;
+  color: gainsboro; }
+
+.nav-bottom a {
+  display: inline-block;
+  color: gainsboro; }
+
+.nav-bottom a:hover {
+  color: #F44336; }
 
 .container {
   width: 1020px;

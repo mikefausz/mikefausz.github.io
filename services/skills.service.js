@@ -36,7 +36,7 @@ angular
             name: "Underscore.js",
             icon: "images/icons/underscore-icon.png",
             iconwidth: "200px",
-            link: "#/project/",
+            link: "#/project/2",
             color: "rgb(4,60,92)"
           },
           {
@@ -44,7 +44,7 @@ angular
             name: "jQuery",
             icon: "images/icons/jquery-icon.png",
             iconwidth: "160px",
-            link: "#/project/1",
+            link: "#/project/3",
             color: "rgb(28,163,203)"
           },
           {
@@ -87,7 +87,7 @@ angular
             color: "rgb(204,100,156)"
           },
           {
-            id: 9,
+            id: 1,
             name: "Bootstrap",
             icon: "images/icons/bootstrap-icon.png",
             iconwidth: "160px",
@@ -106,7 +106,7 @@ angular
             name: "Bower",
             icon: "images/icons/bower-icon.png",
             iconwidth: "180px",
-            link: "#/project/",
+            link: "#/project/1",
             color: "rgb(251,203,52)"
           },
           {
@@ -114,7 +114,7 @@ angular
             name: "npm",
             icon: "images/icons/npm-icon.png",
             iconwidth: "180px",
-            link: "#/project/",
+            link: "#/project/0",
             color: "rgb(204,60,52)"
           },
           {
@@ -130,7 +130,7 @@ angular
             name: "Browserify",
             icon: "images/icons/browserify-icon.png",
             iconwidth: "180px",
-            link: "#/project/",
+            link: "#/project/7",
             color: "rgb(61,108,147)"
           },
         ]
