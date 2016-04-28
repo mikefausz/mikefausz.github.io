@@ -59,6 +59,9 @@ ul {
   justify-content: space-between;
   flex-wrap: wrap; }
 
+.ul-margin {
+  margin: 10px 0; }
+
 li {
   display: inline-block; }
 
@@ -116,8 +119,7 @@ h2 {
 .box-full {
   width: 100%;
   color: white;
-  background-color: #F44336;
-  border: 6px solid #F44336; }
+  background-color: #F44336; }
   .box-full h2 {
     padding: 30px 0; }
   .box-full a {
@@ -125,7 +127,8 @@ h2 {
   .box-full:hover {
     background-color: white; }
     .box-full:hover a {
-      color: #F44336; }
+      color: #F44336;
+      border: 6px solid #F44336; }
 
 .rhymebox {
   background-color: rebeccapurple; }
@@ -143,14 +146,6 @@ h2 {
     margin-bottom: 10px; }
   #splash h2 {
     font-size: 84px; }
-
-#about p {
-  font-family: "Lato";
-  line-height: 1.8; }
-
-#about img {
-  float: right;
-  display: inline-block; }
 
 .project-listing {
   margin: 10px 0;
@@ -289,8 +284,11 @@ h2 {
   #resume:hover h2 {
     display: none; }
 
-.prof-img {
-  background-image: url("../images/me/about-side.png");
-  background-size: cover; }
-  .prof-img:hover {
-    background-image: url("../images/me/about-straight.png"); }
+.prof-img .hide {
+  display: none; }
+
+.prof-img:hover .show {
+  display: none; }
+
+.prof-img:hover .hide {
+  display: block; }

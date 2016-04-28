@@ -79,6 +79,10 @@ ul {
   flex-wrap: wrap;
 }
 
+.ul-margin {
+  margin: 10px 0;
+}
+
 li {
   display: inline-block;
 }
@@ -148,7 +152,6 @@ h2 {
   width: 100%;
   color: white;
   background-color: $red;
-  border: 6px solid $red;
   h2 {
     padding: 30px 0;
   }
@@ -159,6 +162,7 @@ h2 {
     background-color: white;
     a {
       color: $red;
+      border: 6px solid #F44336;
     }
   }
 }
@@ -183,17 +187,6 @@ h2 {
   }
   h2 {
     font-size: 84px;
-  }
-}
-
-#about {
-  p {
-    font-family: "Lato";
-    line-height: 1.8;
-  }
-  img {
-    float: right;
-    display: inline-block;
   }
 }
 
@@ -395,9 +388,18 @@ h2 {
 }
 
 .prof-img {
-  background-image: url('../images/me/about-side.png');
-  background-size: cover;
+  // background-image: url('../images/me/about-side.png');
+  // background-size: cover;
+  .hide {
+    display: none;
+  }
   &:hover {
-    background-image: url('../images/me/about-straight.png');
+    // background-image: url('../images/me/about-straight.png');
+    .show {
+      display: none;
+    }
+    .hide {
+      display: block;
+    }
   }
 }
