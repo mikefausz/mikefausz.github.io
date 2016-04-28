@@ -15,11 +15,11 @@
   </div>
 </a>
 
-<div class="" >
-  <section ng-style="{'background-color': project.color}" class="box-full">
+<section>
+  <div ng-style="{'background-color': project.color}" class="box-full">
     <h2>Technology</h2>
-  </section>
-  <ul class="flex">
+  </div>
+  <ul class="flex ul-margin">
     <li class="skill-li" ng-repeat="technology in tech">
       <a ng-href="{{ technology.link }}">
         <div ng-style="{'background-color': technology.color}" class="box" >
@@ -33,7 +33,6 @@
       </a>
     </li>
   </ul>
-</div>
 </section>
 
 <h2 class="project-description">{{ project.description }}</h2>
@@ -53,7 +52,7 @@
   <img ng-src="{{ project.images[3]}}" alt="" />
 </div>
 
-<ul class="project-nav">
+<ul class="flex project-nav">
   <project-listing
     name="{{ prevProject.name }}"
     displayname="{{ prevProject.displayname }}"

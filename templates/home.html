@@ -17,7 +17,8 @@
       </li>
       <li>
         <div class="box prof-img">
-
+          <img class="show" src="../images/me/about-side.png" alt="" />
+          <img class="hide" src="../images/me/about-straight.png" alt="" />
         </div>
       </li>
     </ul>
@@ -28,7 +29,7 @@
 </section>
 
 <section>
-  <ul class="flex">
+  <ul class="flex ul-margin">
     <project-listing ng-repeat="project in projects | limitTo:4"
       name="{{ project.name }}"
       displayname="{{ project.displayname }}"
@@ -45,9 +46,7 @@
       images="{{ project.images }}">
     </project-listing>
   </ul>
-</section>
 
-<section>
   <div class="box-full">
     <a href="/#/projects">
       <h2>See more of his work here</h2>
@@ -60,7 +59,7 @@
 </section>
 
 <section class="skills">
-  <ul class="flex">
+  <ul class="flex ul-margin">
     <skills-jumbler ng-repeat="skill in skills track by $index"
       number="{{ skill.number }}"
       skillname="{{ skill.skillname }}"
@@ -68,9 +67,7 @@
       technologies="skill.technologies">
     </skills-jumbler>
   </ul>
-</section>
 
-<section>
   <div class="box-full">
     <a href="/#/skills">
       <h2>See what else he knows here</h2>
