@@ -24,14 +24,7 @@ a {
 }
 
 nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1;
   background-color: rgba(255,255,255,.8);
-  a {
-    color: $red;
-  }
 }
 
 .nav-wrap {
@@ -48,12 +41,49 @@ nav {
   font-family: "Montserrat";
   text-align: right;
   padding-top: 10px;
-  width: 50%;
   li {
     padding-top: 16px;
+    padding-bottom: 2px;
+    margin-left: 32px;
+  }
+}
+
+.nav-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  a {
+    color: $red;
+  }
+  li:hover {
+    border-bottom: 2px solid $red;
+  }
+  .nav-links-hover {
+      width: 50%;
+  }
+}
+
+.nav-bottom {
+  .logo-sm {
+    background-color: gainsboro;
     &:hover {
-      border-bottom: 2px solid $red;
+      background-color: $red;
     }
+  }
+  h4 {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: Lato;
+    color: gainsboro;
+  }
+  a {
+    display: inline-block;
+    color: rgb(220,220,220);
+  }
+  a:hover {
+    color: $red;
   }
 }
 
