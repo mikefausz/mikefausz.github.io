@@ -66,9 +66,11 @@ nav {
 
 .nav-bottom {
   .logo-sm {
-    background-color: gainsboro;
+    img {
+      vertical-align: middle;
+    }
     &:hover {
-      background-color: $red;
+
     }
   }
   h4 {
@@ -144,19 +146,10 @@ li {
   width: 50px;
   height: 50px;
   padding: 0;
-  border-radius: 100%;
-  background-color: $red;
-  h3 {
-    color: white;
-    font-size: 20px;
-    letter-spacing: -4px;
-    margin: 0;
-    padding: 16px 4px;
-    font-family: 'Sedgwick Co';
+  img {
+    width: 100%;
   }
   &:hover {
-    background-color: black;
-    border: none !important;
   }
 }
 
@@ -399,10 +392,13 @@ h2 {
     }
   }
 }
+
 .tech-jumbler {
   @extend .box-full;
-  color: white !important;
   margin: 10px 0;
+  h2 {
+    color: white;
+  }
   &:hover {
     cursor: pointer;
     .skillname {
