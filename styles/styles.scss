@@ -178,6 +178,24 @@ h2 {
   }
 }
 
+.box-3 {
+  @extend .box;
+  width: 300px;
+  height: 300px;
+  img {
+    height: 100%;
+  }
+}
+
+.box-tall {
+  @extend .box;
+  height: 400px;
+  background-image: url('http://fillmurray.com/400/500');
+  img {
+    height: 100%;
+  }
+}
+
 .box-full {
   width: 100%;
   color: white;
@@ -337,8 +355,11 @@ h2 {
 }
 
 #contact-img {
-  background-image: url('http://fillmurray.com/1200/400');
-  .tint {
+  background-image: url("https://images.unsplash.com/photo-1434296159862-a6c213a9316f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7e1be860fcc08d547ee85d6d933f62bd");
+  background-size: 120%;
+  background-position-y: -220px;
+  background-position-x: -37px;
+.tint {
     background-color: rgba(244, 67, 54, .5);
   }
 }
@@ -366,6 +387,20 @@ h2 {
 
 .skillbox {
   @extend .box;
+  color: white !important;
+  margin: 10px 0;
+  &:hover {
+    cursor: pointer;
+    .skillname {
+      display: none;
+    }
+    .skillarray {
+      display: block;
+    }
+  }
+}
+.tech-jumbler {
+  @extend .box-full;
   color: white !important;
   margin: 10px 0;
   &:hover {
