@@ -11,7 +11,7 @@ angular
         number: '@',
         skillname: '@',
         color: '@',
-        technologies: '@',
+        technologies: '=',
       },
       link: function(scope, element, attributes) {
         var jumblerInterval;
