@@ -18,7 +18,7 @@ angular
         cover: '../images/projects/chuckwagon-header.png',
         box: '../images/projects/chuckwagon-box.png',
         header: '../images/projects/chuckwagon-header.png',
-        images: ['../images/projects/chuckwagon-full.png']
+        images: ['../images/projects/chuckwagon-full.png', '../images/projects/chuckwagon-search.png']
       },
       {
         number: 1,
