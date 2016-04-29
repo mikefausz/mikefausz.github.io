@@ -133,27 +133,39 @@ h2 {
   font-family: "Lato";
   font-size: 48px; }
 
-.box, .skillbox {
+.box, .box-3, .box-tall, .skillbox {
   width: 500px;
   height: 300px;
   display: inline-block; }
-  .box img, .skillbox img {
+  .box img, .box-3 img, .box-tall img, .skillbox img {
     width: 100%; }
 
-.box-full {
+.box-3 {
+  width: 300px;
+  height: 300px; }
+  .box-3 img {
+    height: 100%; }
+
+.box-tall {
+  height: 400px;
+  background-image: url("http://fillmurray.com/400/500"); }
+  .box-tall img {
+    height: 100%; }
+
+.box-full, .tech-jumbler {
   width: 100%;
   color: white; }
-  .box-full h2 {
+  .box-full h2, .tech-jumbler h2 {
     padding: 30px 0; }
-  .box-full a {
+  .box-full a, .tech-jumbler a {
     color: white; }
 
-#home .box-full {
+#home .box-full, #home .tech-jumbler {
   background-color: #F44336;
   border: 6px solid #F44336; }
-  #home .box-full:hover {
+  #home .box-full:hover, #home .tech-jumbler:hover {
     background-color: white; }
-    #home .box-full:hover a {
+    #home .box-full:hover a, #home .tech-jumbler:hover a {
       color: #F44336; }
 
 .rhymebox {
@@ -253,7 +265,10 @@ h2 {
     background-color: rgba(244, 67, 54, 0.5); }
 
 #contact-img {
-  background-image: url("http://fillmurray.com/1200/400"); }
+  background-image: url("https://images.unsplash.com/photo-1434296159862-a6c213a9316f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7e1be860fcc08d547ee85d6d933f62bd");
+  background-size: 120%;
+  background-position-y: -220px;
+  background-position-x: -37px; }
   #contact-img .tint {
     background-color: rgba(244, 67, 54, 0.5); }
 
@@ -283,7 +298,17 @@ h2 {
     .skillbox:hover .skillarray {
       display: block; }
 
-#skills .box-full {
+.tech-jumbler {
+  color: white !important;
+  margin: 10px 0; }
+  .tech-jumbler:hover {
+    cursor: pointer; }
+    .tech-jumbler:hover .skillname {
+      display: none; }
+    .tech-jumbler:hover .skillarray {
+      display: block; }
+
+#skills .box-full, #skills .tech-jumbler {
   border: none;
   color: #F44336; }
 

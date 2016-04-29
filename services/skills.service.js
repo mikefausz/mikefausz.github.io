@@ -87,7 +87,7 @@ angular
             color: "rgb(204,100,156)"
           },
           {
-            id: 1,
+            id: 9,
             name: "Bootstrap",
             icon: "images/icons/bootstrap-icon.png",
             iconwidth: "160px",

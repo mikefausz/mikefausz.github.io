@@ -26,6 +26,20 @@ angular
       console.log("SKILLS ARRAY: " + skillsArr);
       $scope.tech = skillsArr;
 
+      $scope.links = [
+        {
+          text: "See it live",
+          icon: "images/icons/wifi-icon.png",
+          iconwidth: "180px",
+          color: "rgb(31,82,167)"
+        },
+        {
+          text: "See the code",
+          icon: "images/icons/github-icon.png",
+          iconwidth: "160px",
+          color: "rgb(12,12,12)"
+        }
+      ];
       if($routeParams.number === '5') {
         $scope.prevProject = ProjectService.getProject(parseInt($routeParams.number) - 1);
         $scope.nextProject = ProjectService.getProject(0);

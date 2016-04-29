@@ -1,21 +1,20 @@
 angular
   .module('portfolio')
-  .directive('skillsJumbler', skillsJumbler);
+  .directive('techJumbler', techJumbler);
 
-  function skillsJumbler() {
+  function techJumbler() {
     return {
-      templateUrl: 'templates/skills-jumbler.html',
+      templateUrl: 'templates/tech-jumbler.html',
       restrict: 'E',
       replace: true,
       scope: {
-        number: '@',
-        skillname: '@',
         color: '@',
-        technologies: '@',
+        technologies: '=',
       },
       link: function(scope, element, attributes) {
         var jumblerInterval;
         element.on('mouseenter', function(event) {
+          console.log(attributes[0]);
           jumblerInterval = setInterval(function() {
             scope.count++;
             scope.$apply();

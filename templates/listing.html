@@ -9,25 +9,27 @@
 
 <h2 class="project-summary">{{ project.summary }}</h2>
 
-<a ng-href="{{ project.url }}">
+<a ng-href="{{ project.urls[0] }}">
   <div class="project-main-image">
     <img ng-src="{{ project.images[0]}}" alt="" />
   </div>
 </a>
 
 <section>
-  <div ng-style="{'background-color': project.color}" class="box-full">
-    <h2>Technology</h2>
-  </div>
+  <tech-jumbler
+    technologies="project.technologies"
+    color="{{ project.color }}">
+  </tech-jumbler>
+
   <ul class="flex ul-margin">
-    <li class="skill-li" ng-repeat="technology in tech">
-      <a ng-href="{{ technology.link }}">
-        <div ng-style="{'background-color': technology.color}" class="box" >
+    <li class="skill-li" ng-repeat="link in links track by $index">
+      <a ng-href="{{ project.urls[ $index ]}}">
+        <div ng-style="{'background-color': link.color }" class="box" >
           <div class="center-wrap-sm">
-            <div ng-style="{'width': technology.iconwidth}" class="icon-box">
-              <img ng-src="{{ technology.icon }}" alt="" />
+            <div ng-style="{'width': link.iconwidth}" class="icon-box">
+              <img ng-src="{{ link.icon }}" alt="" />
             </div>
-            <h2>{{ technology.name }}</h2>
+            <h2>{{ link.text }}</h2>
           </div>
         </div>
       </a>
@@ -39,11 +41,20 @@
   <h2 class="project-description">{{ project.description }}</h2>
 </section>
 
-<ul class="flex">
+<!-- <ul class="flex">
   <div class="box">
     <img ng-src="{{ project.images[1]}}" alt="" />
   </div>
   <div class="box">
+    <img ng-src="{{ project.images[2]}}" alt="" />
+  </div>
+</ul> -->
+
+<ul class="flex">
+  <div class="box-tall">
+    <img ng-src="{{ project.images[1]}}" alt="" />
+  </div>
+  <div class="box-tall">
     <img ng-src="{{ project.images[2]}}" alt="" />
   </div>
 </ul>
@@ -52,34 +63,45 @@
   <h2 class="project-description">{{ project.elab }}</h2>
 </section>
 
-<div class="project-main-image">
-  <img ng-src="{{ project.images[3]}}" alt="" />
-</div>
-
-<ul class="flex project-nav">
-  <project-listing
-    name="{{ prevProject.name }}"
-    displayname="{{ prevProject.displayname }}"
-    number="{{ prevProject.number }}"
-    color="{{ prevProject.color }}"
-    font="{{ prevProject.font }}"
-    cover="{{ prevProject.cover }}"
-    box="{{ prevProject.box }}"
-    header="{{ prevProject.header }}"
-    desc="{{ prevProject.descShort }}"
-    tech="{{prevProject.tech}}">
-  </project-listing>
-  <project-listing
-    name="{{ nextProject.name }}"
-    displayname="{{ nextProject.displayname }}"
-    number="{{ nextProject.number }}"
-    color="{{ nextProject.color }}"
-    font="{{ nextProject.font }}"
-    cover="{{ nextProject.cover }}"
-    box="{{ nextProject.box }}"
-    header="{{ nextProject.header }}"
-    desc="{{ nextProject.descShort }}"
-    tech="{{ nextProject.tech }}">
-  </project-listing>
+<ul class="flex">
+  <div class="box-tall">
+    <img ng-src="{{ project.images[3]}}" alt="" />
+  </div>
+  <div class="box-tall">
+    <img ng-src="{{ project.images[4]}}" alt="" />
+  </div>
 </ul>
+
+<section>
+  <div ng-style="{'background-color': project.color}" class="box-full">
+    <h2>More Projects</h2>
+  </div>
+  <ul class="flex ul-margin project-nav">
+    <project-listing
+      name="{{ prevProject.name }}"
+      displayname="{{ prevProject.displayname }}"
+      number="{{ prevProject.number }}"
+      color="{{ prevProject.color }}"
+      font="{{ prevProject.font }}"
+      cover="{{ prevProject.cover }}"
+      box="{{ prevProject.box }}"
+      header="{{ prevProject.header }}"
+      desc="{{ prevProject.descShort }}"
+      tech="{{prevProject.tech}}">
+    </project-listing>
+    <project-listing
+      name="{{ nextProject.name }}"
+      displayname="{{ nextProject.displayname }}"
+      number="{{ nextProject.number }}"
+      color="{{ nextProject.color }}"
+      font="{{ nextProject.font }}"
+      cover="{{ nextProject.cover }}"
+      box="{{ nextProject.box }}"
+      header="{{ nextProject.header }}"
+      desc="{{ nextProject.descShort }}"
+      tech="{{ nextProject.tech }}">
+    </project-listing>
+  </ul>
+</section>
+
 </div>
