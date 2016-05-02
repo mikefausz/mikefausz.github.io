@@ -332,3 +332,31 @@ h2 {
 
 .prof-img:hover .hide {
   display: block; }
+
+@media only screen and (max-width: 1020px) {
+  .container {
+    width: 500px; }
+  .nav-wrap {
+    width: 100%; }
+  .center-wrap, .center-wrap-sm {
+    width: 500px; }
+  #splash h1 {
+    font-size: 88px; }
+  #splash h2 {
+    font-size: 52px; } }
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%; }
+  .nav-wrap {
+    width: 100%; }
+    .nav-wrap li {
+      margin: 0 16px; }
+  .center-wrap, .center-wrap-sm {
+    width: 100%; }
+  .box, .box-3, .box-tall, .skillbox, .project-box {
+    width: 400px; }
+  #splash h2 {
+    font-size: 36px; }
+  .hide-mobile {
+    display: none; } }
