@@ -40,7 +40,7 @@ angular
           color: "rgb(12,12,12)"
         }
       ];
-      if($routeParams.number === '5') {
+      if($routeParams.number === '7') {
         $scope.prevProject = ProjectService.getProject(parseInt($routeParams.number) - 1);
         $scope.nextProject = ProjectService.getProject(0);
       }
