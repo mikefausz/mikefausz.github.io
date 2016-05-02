@@ -18,7 +18,7 @@ angular
         cover: '../images/projects/chuckwagon-header.png',
         box: '../images/projects/chuckwagon-box.png',
         header: '../images/projects/chuckwagon-header.png',
-        images: ['../images/projects/chuckwagon-full.png', '../images/projects/chuckwagon-search.png']
+        images: ['../images/projects/chuckwagon-full.png', '../images/projects/chuckwagon-favs.png', '../images/projects/chuckwagon-search.png', '../images/projects/chuckwagon-login.png', '../images/projects/chuckwagon-prof.png',]
       },
       {
         number: 1,
@@ -121,7 +121,7 @@ angular
         tagline: "A simple todo list app",
         summary: "Todos is a simple todo-list browser app",
         description: "You can add new items to your list, and check off the ones you've completed.",
-        elab: "You can sort your list by active or completed, and clear completed items from the list..",
+        elab: "You can sort your list by active or completed, and clear completed items from the list.",
         tech: [3, 8],
         technologies: ['Underscore.js', 'Sass', 'Bower'],
         urls: ['/todos', 'https://github.com/mikefausz/todos'],
@@ -130,7 +130,7 @@ angular
         cover: "../images/projects/todos-header.png",
         box: '../images/projects/todos-box.png',
         header: '../images/projects/todos-header.png',
-        images: ['../images/projects/todos-full.png']
+        images: ['../images/projects/todos-full.png', '../images/projects/todos-new.png', '../images/projects/todos-complete.png', '../images/projects/todos-active.png', '../images/projects/todos-completed.png']
       },
       {
         number: 6,
@@ -149,7 +149,7 @@ angular
         cover: "../images/projects/surfpaddle-header.png",
         box: '../images/projects/surfpaddle-box.png',
         header: '../images/projects/surfpaddle-header.png',
-        images: ['../images/projects/surfpaddle-full.png']
+        images: ['../images/projects/surfpaddle-full.png', '../images/projects/surfpaddle-anim.png', '../images/projects/surfpaddle-bill.png', '../images/projects/surfpaddle-iphone.png', '../images/projects/surfpaddle-ipad.png']
       },
       // {
       //   number: 7,
