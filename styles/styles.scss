@@ -469,3 +469,45 @@ h2 {
     }
   }
 }
+
+@media only screen and (max-width: 1020px) {
+  .container {
+    width: 500px;
+  }
+  .nav-wrap {
+    width: 100%;
+  }
+  .center-wrap {
+    width: 500px;
+  }
+  #splash h1 {
+    font-size: 88px;
+}
+  #splash h2 {
+    font-size: 52px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .nav-wrap {
+    width: 100%;
+    li {
+          margin: 0 16px;
+    }
+  }
+  .center-wrap {
+    width: 100%;
+  }
+  .box, .project-box {
+    width: 400px;
+  }
+  #splash h2 {
+    font-size: 36px;
+}
+  .hide-mobile {
+    display: none;
+  }
+}
