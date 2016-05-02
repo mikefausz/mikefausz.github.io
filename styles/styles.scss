@@ -454,13 +454,10 @@ h2 {
 }
 
 .prof-img {
-  // background-image: url('../images/me/about-side.png');
-  // background-size: cover;
   .hide {
     display: none;
   }
   &:hover {
-    // background-image: url('../images/me/about-straight.png');
     .show {
       display: none;
     }
@@ -479,6 +476,12 @@ h2 {
   }
   .center-wrap {
     width: 500px;
+  }
+  .box, .project-listing {
+    margin: 20px 0;
+  }
+  .project-main-image {
+    height: 276px;
   }
   #splash h1 {
     font-size: 88px;
