@@ -340,6 +340,10 @@ h2 {
     width: 100%; }
   .center-wrap, .center-wrap-sm {
     width: 500px; }
+  .box, .box-3, .box-tall, .skillbox, .project-listing {
+    margin: 20px 0; }
+  .project-main-image {
+    height: 276px; }
   #splash h1 {
     font-size: 88px; }
   #splash h2 {
