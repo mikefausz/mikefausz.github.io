@@ -21,6 +21,24 @@ angular
         images: ['../images/projects/chuckwagon-full.png', '../images/projects/chuckwagon-favs.png', '../images/projects/chuckwagon-search.png', '../images/projects/chuckwagon-login.png', '../images/projects/chuckwagon-prof.png',]
       },
       {
+        number: 8,
+        name: "Minesweeper",
+        displayname: "MINESWEEPER",
+        tagline: "An Angular recreation of the classic game",
+        summary: "Minesweeper is an Angular recreation of the classic game.",
+        description: "Click squares to reveal their contents. Clues indicate the number of adjacent mines.",
+        elab: "Uncover all the squares without detonating any mines to win.",
+        tech: [0, 9],
+        technologies: ["AngularJS", "HTML5", "Sass"],
+        urls: ['/minesweeper', 'https://github.com/mikefausz/minesweeper'],
+        color: 'rgba(0,128,128,.85)',
+        font: "normal 40px 'Raleway'",
+        cover: "https://c1.staticflickr.com/7/6183/6132449424_386eee552f_b.jpg",
+        box: "https://c1.staticflickr.com/7/6183/6132449424_386eee552f_b.jpg",
+        header: "https://c1.staticflickr.com/7/6183/6132449424_386eee552f_b.jpg",
+        images: ['../images/projects/chuckwagon-full.png', '../images/projects/chuckwagon-favs.png', '../images/projects/chuckwagon-search.png', '../images/projects/chuckwagon-login.png', '../images/projects/chuckwagon-prof.png',]
+      },
+      {
         number: 1,
         name: "Fartsy",
         displayname: "Fartsy",
