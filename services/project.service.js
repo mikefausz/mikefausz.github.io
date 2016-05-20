@@ -21,24 +21,6 @@ angular
         images: ['../images/projects/chuckwagon-full.png', '../images/projects/chuckwagon-favs.png', '../images/projects/chuckwagon-search.png', '../images/projects/chuckwagon-login.png', '../images/projects/chuckwagon-prof.png',]
       },
       {
-        number: 8,
-        name: "Minesweeper",
-        displayname: "MINESWEEPER",
-        tagline: "An Angular recreation of the classic game",
-        summary: "Minesweeper is an Angular recreation of the classic game.",
-        description: "Click squares to reveal their contents. Clues indicate the number of adjacent mines.",
-        elab: "Uncover all the squares without detonating any mines to win.",
-        tech: [0, 9],
-        technologies: ["AngularJS", "HTML5", "Sass"],
-        urls: ['/minesweeper', 'https://github.com/mikefausz/minesweeper'],
-        color: 'rgba(0,128,128,.85)',
-        font: "normal 40px 'Raleway'",
-        cover: "https://c1.staticflickr.com/7/6183/6132449424_386eee552f_b.jpg",
-        box: "https://c1.staticflickr.com/7/6183/6132449424_386eee552f_b.jpg",
-        header: "https://c1.staticflickr.com/7/6183/6132449424_386eee552f_b.jpg",
-        images: ['../images/projects/chuckwagon-full.png', '../images/projects/chuckwagon-favs.png', '../images/projects/chuckwagon-search.png', '../images/projects/chuckwagon-login.png', '../images/projects/chuckwagon-prof.png',]
-      },
-      {
         number: 1,
         name: "Fartsy",
         displayname: "Fartsy",
@@ -74,6 +56,24 @@ angular
         box: '../images/projects/honebrew-box.png',
         header: '../images/projects/honebrew-header.png',
         images: ['images/projects/honebrew-full.png', 'images/projects/honebrew-search.png', 'images/projects/honebrew-list.png', 'images/projects/honebrew-link.png', 'images/projects/honebrew-directions.png']
+      },
+      {
+        number: 8,
+        name: "Minesweeper",
+        displayname: "MINESWEEPER",
+        tagline: "An Angular recreation of the classic game",
+        summary: "Minesweeper is an Angular recreation of the classic game.",
+        description: "Click squares to reveal their contents. Clues indicate the number of adjacent mines.",
+        elab: "Uncover all the squares without detonating any mines to win.",
+        tech: [0, 9],
+        technologies: ["AngularJS", "HTML5", "Sass"],
+        urls: ['/minesweeper', 'https://github.com/mikefausz/minesweeper'],
+        color: 'rgba(0,128,128,.85)',
+        font: "normal 40px 'Raleway'",
+        cover: "https://c1.staticflickr.com/7/6183/6132449424_386eee552f_b.jpg",
+        box: "https://c1.staticflickr.com/7/6183/6132449424_386eee552f_b.jpg",
+        header: "https://c1.staticflickr.com/7/6183/6132449424_386eee552f_b.jpg",
+        images: ['../images/projects/chuckwagon-full.png', '../images/projects/chuckwagon-favs.png', '../images/projects/chuckwagon-search.png', '../images/projects/chuckwagon-login.png', '../images/projects/chuckwagon-prof.png',]
       },
       {
         number: 3,
@@ -114,6 +114,24 @@ angular
         images: ["../images/projects/powellperalta-full.png", "../images/projects/powellperalta-slider.png", "../images/projects/powellperalta-anim.png", "../images/projects/powellperalta-iphone.png", "../images/projects/powellperalta-ipad.png"]
       },
       {
+        number: 7,
+        name: "Todos",
+        displayname: "todos",
+        tagline: "A simple todo list app",
+        summary: "Todos is a simple todo-list browser app",
+        description: "You can add new items to your list, and check off the ones you've completed.",
+        elab: "You can sort your list by active or completed, and clear completed items from the list.",
+        tech: [3, 8],
+        technologies: ['Underscore.js', 'Sass', 'Bower'],
+        urls: ['/todos', 'https://github.com/mikefausz/todos'],
+        color: 'rgba(90, 85, 85, .85)',
+        font: "54px 'Yantramanav', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, sans-serif",
+        cover: "../images/projects/todos-header.png",
+        box: '../images/projects/todos-box.png',
+        header: '../images/projects/todos-header.png',
+        images: ['../images/projects/todos-full.png', '../images/projects/todos-new.png', '../images/projects/todos-complete.png', '../images/projects/todos-active.png', '../images/projects/todos-completed.png']
+      },
+      {
         number: 5,
         name: "Big Buck Hunter",
         displayname: "BIG BUCK HUNTER",
@@ -131,24 +149,6 @@ angular
         box: '../images/projects/bigbuck-box.png',
         header: '../images/projects/bigbuck-header.png',
         images: ['../images/projects/bigbuck-full.png', '../images/projects/bigbuck-hunter.png', '../images/projects/bigbuck-weapon.png', '../images/projects/bigbuck-buck.png', '../images/projects/bigbuck-goteem.png']
-      },
-      {
-        number: 7,
-        name: "Todos",
-        displayname: "todos",
-        tagline: "A simple todo list app",
-        summary: "Todos is a simple todo-list browser app",
-        description: "You can add new items to your list, and check off the ones you've completed.",
-        elab: "You can sort your list by active or completed, and clear completed items from the list.",
-        tech: [3, 8],
-        technologies: ['Underscore.js', 'Sass', 'Bower'],
-        urls: ['/todos', 'https://github.com/mikefausz/todos'],
-        color: 'rgba(90, 85, 85, .85)',
-        font: "54px 'Yantramanav', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, sans-serif",
-        cover: "../images/projects/todos-header.png",
-        box: '../images/projects/todos-box.png',
-        header: '../images/projects/todos-header.png',
-        images: ['../images/projects/todos-full.png', '../images/projects/todos-new.png', '../images/projects/todos-complete.png', '../images/projects/todos-active.png', '../images/projects/todos-completed.png']
       },
       {
         number: 6,
