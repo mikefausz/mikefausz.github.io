@@ -58,7 +58,7 @@ angular
         images: ['images/projects/honebrew-full.png', 'images/projects/honebrew-search.png', 'images/projects/honebrew-list.png', 'images/projects/honebrew-link.png', 'images/projects/honebrew-directions.png']
       },
       {
-        number: 8,
+        number: 3,
         name: "Minesweeper",
         displayname: "MINESWEEPER",
         tagline: "An Angular recreation of the classic game",
@@ -76,7 +76,7 @@ angular
         images: ['../images/projects/minesweeper-full.png', '../images/projects/minesweeper-click.png', '../images/projects/minesweeper-numbers.png', '../images/projects/minesweeper-flags.png', '../images/projects/minesweeper-bomb.png',]
       },
       {
-        number: 3,
+        number: 4,
         name: "Fetch!",
         displayname: "Fetch!",
         tagline: "An anything delivery service",
@@ -96,7 +96,7 @@ angular
       },
 
       {
-        number: 4,
+        number: 5,
         name: "Powell-Peralta",
         displayname: "POWELL-PERALTA",
         tagline: "An American skateboard company founded by George Powell and Stacy Peralta in 1978.",
@@ -114,7 +114,7 @@ angular
         images: ["../images/projects/powellperalta-full.png", "../images/projects/powellperalta-slider.png", "../images/projects/powellperalta-anim.png", "../images/projects/powellperalta-iphone.png", "../images/projects/powellperalta-ipad.png"]
       },
       {
-        number: 7,
+        number: 6,
         name: "Todos",
         displayname: "todos",
         tagline: "A simple todo list app",
@@ -132,7 +132,7 @@ angular
         images: ['../images/projects/todos-full.png', '../images/projects/todos-new.png', '../images/projects/todos-complete.png', '../images/projects/todos-active.png', '../images/projects/todos-completed.png']
       },
       {
-        number: 5,
+        number: 7,
         name: "Big Buck Hunter",
         displayname: "BIG BUCK HUNTER",
         tagline: "An Iron Yard Academy Project Est Fall 2013",
@@ -170,7 +170,7 @@ angular
       //   images: ['../images/projects/surfpaddle-full.png', '../images/projects/surfpaddle-anim.png', '../images/projects/surfpaddle-bill.png', '../images/projects/surfpaddle-iphone.png', '../images/projects/surfpaddle-ipad.png']
       // },
       // {
-      //   number: 7,
+      //   number: 8,
       //   name: "Be Mime",
       //   displayname: "be mime",
       //   tagline: "A dating site for quiet types",
