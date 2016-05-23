@@ -151,7 +151,7 @@ angular
         images: ['../images/projects/bigbuck-full.png', '../images/projects/bigbuck-hunter.png', '../images/projects/bigbuck-weapon.png', '../images/projects/bigbuck-buck.png', '../images/projects/bigbuck-goteem.png']
       },
       // {
-      //   number: 6,
+      //   number: 8,
       //   name: "Surf & Paddle Co.",
       //   displayname: "SURF & PADDLE CO.",
       //   tagline: "An Iron Yard Academy Project Est Fall 2013",
@@ -170,7 +170,7 @@ angular
       //   images: ['../images/projects/surfpaddle-full.png', '../images/projects/surfpaddle-anim.png', '../images/projects/surfpaddle-bill.png', '../images/projects/surfpaddle-iphone.png', '../images/projects/surfpaddle-ipad.png']
       // },
       // {
-      //   number: 8,
+      //   number: 9,
       //   name: "Be Mime",
       //   displayname: "be mime",
       //   tagline: "A dating site for quiet types",
@@ -188,7 +188,7 @@ angular
       //   images: ['../images/projects/bemime-full.png']
       // },
       // {
-      //   number: 9,
+      //   number: 10,
       //   name: "Butters",
       //   displayname: "butters",
       //   tagline: "Oh, Hamburgers!",
