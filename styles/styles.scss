@@ -17,6 +17,11 @@ $red: #F44336; // 	rgba(244, 67, 54, 1)
 body {
   text-align: center;
   color: $red;
+
+  &::after{
+   display:none;
+   content: url('../images/me/about-side.png') url('../images/me/about-straight.png');
+  }
 }
 
 a, a:focus, a:hover {
@@ -453,16 +458,11 @@ h2 {
 }
 
 .prof-img {
-  .hide {
-    display: none !important;
-  }
+  background-image: url('../images/me/about-side.png');
+  background-position: center;
+  background-size: cover;
   &:hover {
-    .show {
-      display: none !important;
-    }
-    .hide {
-      display: block !important;
-    }
+    background-image: url('../images/me/about-straight.png');
   }
 }
 

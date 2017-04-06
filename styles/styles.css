@@ -10,6 +10,9 @@
 body {
   text-align: center;
   color: #F44336; }
+  body::after {
+    display: none;
+    content: url("../images/me/about-side.png") url("../images/me/about-straight.png"); }
 
 a, a:focus, a:hover {
   text-decoration: none; }
@@ -323,18 +326,14 @@ h2 {
   #resume:hover h2 {
     display: none; }
 
-.prof-img .hide {
-  display: none !important; }
-
-.prof-img:hover .show {
-  display: none !important; }
-
-.prof-img:hover .hide {
-  display: block !important; }
+.prof-img {
+  background-image: url("../images/me/about-side.png");
+  background-position: center;
+  background-size: cover; }
+  .prof-img:hover {
+    background-image: url("../images/me/about-straight.png"); }
 
 @media only screen and (max-width: 1020px) {
-  .nav-wrap {
-    width: 100%; }
   .box, .box-3, .box-tall, .skillbox, .project-listing {
     margin: 20px 0; }
   .project-main-image {
@@ -345,10 +344,8 @@ h2 {
     font-size: 52px; } }
 
 @media only screen and (max-width: 500px) {
-  .nav-wrap {
-    width: 100%; }
-    .nav-wrap li {
-      margin: 0 16px; }
+  .nav-wrap li {
+    margin: 0 16px; }
   #splash h2 {
     font-size: 36px; }
   .hide-mobile {
