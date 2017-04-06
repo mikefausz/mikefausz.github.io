@@ -30,7 +30,7 @@ angular
         elab: "You can update quantity or remove items from your cart.",
         tech: [0, 9],
         technologies: ["AngularJS", "Bootstrap", "Etsy API", "Bower"],
-        urls: ['/fartsy', 'https://github.com/mikefausz/fartsy'],
+        urls: ['', 'https://github.com/mikefausz/fartsy'],
         color: 'rgba(252,91,4,.85)',
         font: "normal 48px 'Merriweather'",
         cover: "../images/projects/fartsy-header.png",
