@@ -245,6 +245,8 @@ h2 {
   margin: 10px 0;
   width: 100%;
   transition: all .5s ease-in-out;
+  background-position: center;
+  background-size: cover;
   &:hover {
     .tint {
       background-color: transparent !important;

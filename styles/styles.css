@@ -177,7 +177,9 @@ h2 {
 .project-listing {
   margin: 10px 0;
   width: 100%;
-  transition: all .5s ease-in-out; }
+  transition: all .5s ease-in-out;
+  background-position: center;
+  background-size: cover; }
   .project-listing:hover .tint {
     background-color: transparent !important; }
   .project-listing .tint {
