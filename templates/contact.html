@@ -8,24 +8,25 @@
         </div>
       </div>
     </div>
+
     <section>
       <h2>Hit him up.</h2>
     </section>
-    <section>
-        <ul class="flex">
-          <li class="skill-li" ng-repeat="contact in contacts">
-            <a ng-href="{{ contact.link }}">
-              <div ng-style="{'background-color': contact.color}" class="box" >
-                <div class="center-wrap-sm">
-                  <div ng-style="{'width': contact.iconwidth}" class="icon-box">
-                    <img ng-src="{{ contact.icon }}" alt="" />
-                  </div>
-                  <h2>{{ contact.name }}</h2>
-                </div>
+
+    <section class="row">
+      <div class="col-sm-6 skill-li" ng-repeat="contact in contacts">
+        <a ng-href="{{ contact.link }}">
+          <div ng-style="{'background-color': contact.color}" class="box" >
+            <div class="center-wrap-sm">
+              <div ng-style="{'width': contact.iconwidth}" class="icon-box">
+                <img ng-src="{{ contact.icon }}" alt="" />
               </div>
-            </a>
-          </li>
-        </ul>
+              <h2>{{ contact.name }}</h2>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
+    
   </div>
 </div>

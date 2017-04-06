@@ -1,90 +1,88 @@
 <div class="container" id="home">
 
   <section id="splash">
-      <h1>Mike Fausz</h1>
-      <h2>Developer // Designer</h2>
+    <h1>Mike Fausz</h1>
+    <h2>Developer // Designer</h2>
   </section>
 
-  <section id="about">
-    <ul class="flex">
-      <li class="about-text">
-        <!-- <div > -->
-          <name-rhymer
-            mikes="mikes"
-            fauszs="fauszs">
-          </name-rhymer>
-        <!-- </div> -->
-      </li>
-      <li>
-        <div class="box prof-img">
-          <img class="show" src="../images/me/about-side.png" alt="" />
-          <img class="hide" src="../images/me/about-straight.png" alt="" />
-        </div>
-      </li>
+  <section class="row" id="about">
+    <div class="col-sm-6 about-text">
+        <name-rhymer
+          mikes="mikes"
+          fauszs="fauszs">
+        </name-rhymer>
+    </div>
+    <div class="col-sm-6">
+      <div class="box prof-img">
+        <img class="show" src="../images/me/about-side.png" alt="" />
+        <img class="hide" src="../images/me/about-straight.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="row" id="work">
+    <div class="col-xs-12">
+      <h2>Mike Fausz is a real-live human being who develops software and designs clean user experiences.</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <project-listing ng-repeat="project in projects | limitTo:4"
+        name="{{ project.name }}"
+        displayname="{{ project.displayname }}"
+        number="{{ project.number }}"
+        color="{{ project.color }}"
+        font="{{ project.font }}"
+        fontsize="{{ project.fontsize }}"
+        url="{{ project.url}}"
+        cover="{{ project.cover }}"
+        box="{{ project.box }}"
+        header="{{ project.header }}"
+        description="{{ project.descShort }}"
+        tech="{{ project.tech }}"
+        images="{{ project.images }}">
+      </project-listing>
+    </div>
+
+    <div class="box-full">
+      <a href="/#/projects">
+        <h2>See more of his work here</h2>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>He knows a few things.</h2>
+  </section>
+
+  <section class="skills">
+    <ul class="row">
+      <skills-jumbler ng-repeat="skill in skills track by $index"
+        number="{{ skill.number }}"
+        skillname="{{ skill.skillname }}"
+        color="{{ skill.color }}"
+        technologies="skill.technologies">
+      </skills-jumbler>
     </ul>
-</section>
 
-<section id="work">
-  <h2>Mike Fausz is a real-live human being who develops software and designs clean user experiences.</h2>
-</section>
+    <div class="box-full">
+      <a href="/#/skills">
+        <h2>See what else he knows here</h2>
+      </a>
+    </div>
+  </section>
 
-<section>
-  <ul class="flex ul-margin">
-    <project-listing ng-repeat="project in projects | limitTo:4"
-      name="{{ project.name }}"
-      displayname="{{ project.displayname }}"
-      number="{{ project.number }}"
-      color="{{ project.color }}"
-      font="{{ project.font }}"
-      fontsize="{{ project.fontsize }}"
-      url="{{ project.url}}"
-      cover="{{ project.cover }}"
-      box="{{ project.box }}"
-      header="{{ project.header }}"
-      description="{{ project.descShort }}"
-      tech="{{ project.tech }}"
-      images="{{ project.images }}">
-    </project-listing>
-  </ul>
+  <section>
+    <h2>He is currently available for hire.</h2>
+  </section>
 
-  <div class="box-full">
-    <a href="/#/projects">
-      <h2>See more of his work here</h2>
-    </a>
-  </div>
-</section>
-
-<section>
-  <h2>He knows a few things.</h2>
-</section>
-
-<section class="skills">
-  <ul class="flex ul-margin">
-    <skills-jumbler ng-repeat="skill in skills track by $index"
-      number="{{ skill.number }}"
-      skillname="{{ skill.skillname }}"
-      color="{{ skill.color }}"
-      technologies="skill.technologies">
-    </skills-jumbler>
-  </ul>
-
-  <div class="box-full">
-    <a href="/#/skills">
-      <h2>See what else he knows here</h2>
-    </a>
-  </div>
-</section>
-
-<section>
-  <h2>He is currently available for hire.</h2>
-</section>
-
-<section>
-  <div class="box-full">
-    <a href="/#/contact">
-      <h2>Get at him here</h2>
-    </a>
-  </div>
-</section>
+  <section>
+    <div class="box-full">
+      <a href="/#/contact">
+        <h2>Get at him here</h2>
+      </a>
+    </div>
+  </section>
 
 </div>

@@ -16,8 +16,8 @@
         <div ng-style="{'background-color': skill.color}" class="box-full">
           <h2>{{ skill.skillname }}</h2>
         </div>
-        <ul class="flex ul-margin">
-          <li class="skill-li" ng-repeat="technology in skill.technologies">
+        <div class="row">
+          <div class="col-sm-6 skill-li" ng-repeat="technology in skill.technologies">
             <a ng-href="{{ technology.link }}">
               <div ng-style="{'background-color': technology.color}" class="box" >
                 <div class="center-wrap-sm">
@@ -28,8 +28,8 @@
                 </div>
               </div>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
     </section>
   </div>

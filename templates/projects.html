@@ -11,8 +11,7 @@
     <h2> His work has not been featured in any publications worth bragging about.</h2>
   </section>
 
-  <section>
-    <ul class="flex">
+  <section class="row">
       <project-listing ng-repeat="project in projects"
 
         name="{{ project.name }}"
@@ -29,7 +28,6 @@
         images="{{ project.images }}">
 
       </project-listing>
-    </ul>
   </section>
 
 </div>
