@@ -90,7 +90,8 @@ li {
 
 .tint {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .logo {
   width: 180px;
@@ -125,6 +126,7 @@ h2 {
 .box, .box-3, .box-tall, .skillbox {
   width: 100%;
   height: 300px;
+  position: relative;
   display: inline-block;
   overflow: hidden; }
   .box img, .box-3 img, .box-tall img, .skillbox img {

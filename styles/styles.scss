@@ -125,6 +125,7 @@ li {
 .tint {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .logo {
@@ -168,6 +169,7 @@ h2 {
 .box {
   width: 100%;
   height: 300px;
+  position: relative;
   display: inline-block;
   overflow: hidden;
   img {
