@@ -188,8 +188,8 @@ h2 {
 
 .box-tall {
   @extend .box;
-  height: 400px;
   img {
+    width: auto;
     height: 100%;
   }
 }
@@ -197,6 +197,7 @@ h2 {
 .box-full {
   width: 100%;
   color: white;
+  margin-top: 13px;
   h2 {
     padding: 30px 0;
   }
@@ -244,7 +245,7 @@ h2 {
 
 // PROJECT LISTING DIRECTIVE
 .project-listing {
-  margin: 10px 0;
+  margin: 13px 0;
   width: 100%;
   transition: all .5s ease-in-out;
   background-position: center;
@@ -319,50 +320,40 @@ h2 {
 }
 
 .project-main-image {
-  width: 100%;
-  height: 600px;
   img {
     width: 100%;
   }
-}
+}//
 
 .project-description {
   text-align: center;
   margin: 50px 0;
 }
 
-#projects-img {
-  background-image: url('https://images.unsplash.com/photo-1417733403748-83bbc7c05140?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=4c01399b01c8b4b1c5a8cfcdee7cfea2');
-  background-position-y: 60%;
+.page-banner {
+  background-size: cover;
   .tint {
     background-color: rgba(244, 67, 54, .5);
   }
+}
+#projects-img {
+  background-image: url('https://images.unsplash.com/photo-1417733403748-83bbc7c05140?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=4c01399b01c8b4b1c5a8cfcdee7cfea2');
+  background-position-y: 60%;
 }
 
 #skills-img {
   background-image: url('https://images.unsplash.com/photo-1453806839674-d1a9087ca1ed?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=6732ffac2eb50683b1a18b874e295a25');
   background-position-y: 96%;
-  .tint {
-    background-color: rgba(244, 67, 54, .5);
-  }
 }
 
 #about-face {
   background-image: url('../images/me/about-header.png');
-  background-size: 1046px;
-  .tint {
-    background-color: rgba(244, 67, 54, .5);
-  }
 }
 
 #contact-img {
   background-image: url("https://images.unsplash.com/photo-1434296159862-a6c213a9316f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7e1be860fcc08d547ee85d6d933f62bd");
-  background-size: 120%;
   background-position-y: -220px;
   background-position-x: -37px;
-.tint {
-    background-color: rgba(244, 67, 54, .5);
-  }
 }
 
 .tech {
@@ -426,7 +417,7 @@ h2 {
 }
 
 .skill-li {
-  margin: 10px 0;
+  margin: 13px 0;
   &:hover {
     .icon-box {
       display: block;
@@ -470,19 +461,22 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1019px) {
   .box, .project-listing {
-    margin: 20px 0;
-  }
-  .project-main-image {
-    height: 276px;
+    // margin: 4% 0;
   }
   #splash h1 {
     font-size: 88px;
-}
+  }
   #splash h2 {
     font-size: 52px;
+  }
 }
+
+@media only screen and (max-width: 767px) {
+  .box, .project-listing {
+    // margin: 1.5% 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {

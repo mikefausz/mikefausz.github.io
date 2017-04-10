@@ -1,7 +1,7 @@
 <div id="skills">
 
   <div class="container listing-detail">
-    <div class="project-detail" id="skills-img">
+    <div class="project-detail page-banner" id="skills-img">
       <div class="tint" >
         <div class="center-wrap">
           <h1>SKILLS</h1>
@@ -18,7 +18,9 @@
         </div>
         <div class="row">
           <div class="col-sm-6 skill-li" ng-repeat="technology in skill.technologies">
-            <a ng-href="{{ technology.link }}">
+            <!-- TODO Re-anable when I fix project links. -->
+            <!-- <a ng-href="{{ technology.link }}"> -->
+            <a ng-href="">
               <div ng-style="{'background-color': technology.color}" class="box" >
                 <div class="center-wrap-sm">
                   <div ng-style="{'width': technology.iconwidth}" class="icon-box">
