@@ -1,7 +1,8 @@
 
 angular
   .module('portfolio', ['ngRoute'])
-  .config(function($routeProvider) {
+  .config(function($locationProvider, $routeProvider) {
+    $locationProvider.hashPrefix('');
     $routeProvider
       .when('/', {
         templateUrl: "templates/home.html",
